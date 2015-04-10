@@ -1,0 +1,120 @@
+html,body {
+    color: #333333;
+
+}
+.navbar-inverse{
+    border:0;
+}
+.navbar-inverse .navbar-header, .navbar-collapse{
+    margin: 0 15px;
+}
+.navbar-inverse .navbar-brand{
+    color: #ffc;
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 15px 20px 10px;
+    text-decoration: none; 
+}
+.navbar-inverse .navbar-brand:hover{
+    color:#ffc;
+}
+
+#navbarCollapse{
+    background-color:#222;
+    
+    overflow-y:hidden;
+}
+
+#navbarCollapse > ul{
+    margin: 15px  0;
+    padding:0;
+}
+#navbarCollapse > ul >li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+#navbarCollapse > ul >li >a{
+    color:#999999;
+    font-size:15px;
+    text-decoration: none; 
+}
+
+#navbarCollapse > ul >li >a:hover{
+    color:#ffc;
+}
+
+
+.container {
+    min-height: 90%;
+    height: auto !important;
+    height: 90%;
+    width: 80%;
+    margin-top: 80px; 
+}
+
+.carousel-inner .item {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    min-height: inherit;
+    max-height: 300px;
+}
+.carousel-caption {
+    margin-left: -20%;
+    margin-bottom: -3%;
+    text-align:left;
+}
+
+.wordSize{
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.tagCloud
+{
+   width: 250px; 
+   height: 200px;
+}
+
+.footer {
+position:fixed;
+bottom:0;
+height:60px;
+opacity: 0.4;
+}
+
+.footer:hover {
+position:fixed;
+bottom:0;
+height:60px;
+opacity: 0.8;
+}
+
+
+@media (max-width: 900px){
+    .wordSize{
+        padding-left: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .wordSize{
+        padding-left: 60px;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 480px){
+    #navbarCollapse > ul >li{
+        display:inline-block;
+        padding: 0 10px;
+    }
+}
