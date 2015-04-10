@@ -5,17 +5,23 @@ require.config({
     "jquery":"node_modules/jquery/dist/jquery.min",
     "angular-route":"node_modules/angular-route/angular-route.min",
     "bootstrap":"node_modules/bootstrap/dist/js/bootstrap.min",
-    "controllers":"controllers/controllers",
+    "homeCtrl":"controllers/homeController",
     "ngHeader":"directives/ngHeader", 
-    "ngFooter":"directives/ngFooter"
+    "ngFooter":"directives/ngFooter",
+    'plugins':'js/plugins',
+    'custom':'js/custom',
+    'skillCtrl':'controllers/skillController'
   },
 
   shim: {
     'ngHeader': ['angular'],
     'ngFooter': ['angular'],
     'angular-route':['angular'],
-    'controllers': ['angular'],
-    'bootstrap': ['jquery']
+    'homeCtrl': ['angular'],
+    'skillCtrl': ['angular'],
+    'bootstrap': ['jquery'],
+//    'plugins':['jquery'],
+//    'custom':['jquery','plugins']
   }
 
 })
@@ -24,38 +30,41 @@ require.config({
 require([
           "angular",
           "angular-route",
-          "controllers",
+          "homeCtrl",
           "ngHeader",
           "ngFooter",
-          "jquery",
-          "bootstrap"
+          "skillCtrl"
+//          "jquery",
+ //         "bootstrap",
+   //       "plugins",
+     //     "custom"
           
           ],function(){
 
-              var app= angular.module('Portfolio',['ngRoute','appCtrl','appFooter','appHeader']);
+              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl']);
 
                 app.config(['$routeProvider',
                   function($routeProvider) {
                     $routeProvider.
                       when('/', {
                         templateUrl: 'partials/home.html',
-                        controller: 'hController'
+                        controller: 'homeController'
                       }).
                       when('/about', {
                         templateUrl: 'partials/about.html',
-                        controller: 'aController'
+                        controller: 'homeController'
                       }).
                       when('/skills', {
                         templateUrl: 'partials/skills.html',
-                        controller: 'aController'
+                        controller: 'skillController'
                       }).
                       when('/projects', {
                         templateUrl: 'partials/projects.html',
-                        controller: 'aController'
+                        controller: 'homeController'
                       }).            
                       when('/connect', {
                         templateUrl: 'partials/connect.html',
-                        controller: 'aController'
+                        controller: 'homeController'
                       }).            
                       otherwise({
                         redirectTo: '/'
