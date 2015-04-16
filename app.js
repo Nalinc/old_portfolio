@@ -2,15 +2,15 @@
 require.config({
   waitSeconds: 0,
   paths:{
-    "angular":"node_modules/angular/angular",
+    "angular":"node_modules/angular/angular.min",
     "jquery":"node_modules/jquery/dist/jquery.min",
     "angular-route":"node_modules/angular-route/angular-route.min",
     "bootstrap":"node_modules/bootstrap/dist/js/bootstrap.min",
     "homeCtrl":"controllers/homeController",
     "ngHeader":"directives/ngHeader", 
     "ngFooter":"directives/ngFooter",
-    'plugins':'js/plugins',
-    'custom':'js/custom',
+    'plugins':'js/plugins.min',
+    'custom':'js/custom.min',
     'skillCtrl':'controllers/skillController'
   },
 
