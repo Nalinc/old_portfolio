@@ -1,5 +1,7 @@
 
 require.config({
+  enforceDefine: true,
+  waitSeconds: 0,
   paths:{
     "angular":"node_modules/angular/angular",
     "jquery":"node_modules/jquery/dist/jquery.min",
@@ -20,8 +22,6 @@ require.config({
     'homeCtrl': ['angular'],
     'skillCtrl': ['angular'],
     'bootstrap': ['jquery'],
-//    'plugins':['jquery'],
-//    'custom':['jquery','plugins']
   }
 
 })
