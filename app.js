@@ -35,7 +35,7 @@ require([
           "skillCtrl"          
           ],function(){
 
-              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl']);
+              var app= angular.module('Portfolio',['ngRoute']);
 
                 app.config(['$routeProvider',
                   function($routeProvider) {
