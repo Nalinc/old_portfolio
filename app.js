@@ -32,12 +32,7 @@ require([
           "homeCtrl",
           "ngHeader",
           "ngFooter",
-          "skillCtrl"
-//          "jquery",
- //         "bootstrap",
-   //       "plugins",
-     //     "custom"
-          
+          "skillCtrl"          
           ],function(){
 
               var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl']);
