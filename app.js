@@ -2,10 +2,19 @@
 require.config({
   waitSeconds: 0,
   paths:{
-    "angular":"node_modules/angular/angular.min",
+    "angular":[
+                "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min",
+                "node_modules/angular/angular.min"
+              ],
     "jquery":"node_modules/jquery/dist/jquery.min",
-    "angular-route":"node_modules/angular-route/angular-route.min",
-    "bootstrap":"node_modules/bootstrap/dist/js/bootstrap.min",
+    "angular-route":[
+                      "ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route",
+                      "node_modules/angular-route/angular-route.min"
+                    ],
+    "bootstrap":[
+                  "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min",
+                  "node_modules/bootstrap/dist/js/bootstrap.min"
+                ],
     "homeCtrl":"controllers/homeController",
     "ngHeader":"directives/ngHeader", 
     "ngFooter":"directives/ngFooter",
