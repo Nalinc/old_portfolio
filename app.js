@@ -1,6 +1,5 @@
 
 require.config({
-  enforceDefine: true,
   waitSeconds: 0,
   paths:{
     "angular":"node_modules/angular/angular",
@@ -27,7 +26,7 @@ require.config({
 })
 
 
-define([
+require([
           "angular",
           "angular-route",
           "homeCtrl",
