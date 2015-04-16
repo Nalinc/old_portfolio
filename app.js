@@ -2,25 +2,26 @@
 require.config({
   waitSeconds: 0,
   paths:{
-    "angular":[
-                "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min",
-                "node_modules/angular/angular.min"
+    'angular':[
+                'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min',
+                'node_modules/angular/angular.min'
               ],
-    "jquery":"node_modules/jquery/dist/jquery.min",
-    "angular-route":[
-                      "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route",
-                      "node_modules/angular-route/angular-route.min"
+    'jquery':'node_modules/jquery/dist/jquery.min',
+    'angular-route':[
+                      'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route',
+                      'node_modules/angular-route/angular-route.min'
                     ],
-    "bootstrap":[
-                  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min",
-                  "node_modules/bootstrap/dist/js/bootstrap.min"
+    'bootstrap':[
+                  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min',
+                  'node_modules/bootstrap/dist/js/bootstrap.min'
                 ],
-    "homeCtrl":"controllers/homeController",
-    "ngHeader":"directives/ngHeader", 
-    "ngFooter":"directives/ngFooter",
+    'homeCtrl':'controllers/homeController',
+    'ngHeader':'directives/ngHeader', 
+    'ngFooter':'directives/ngFooter',
     'plugins':'js/plugins.min',
     'custom':'js/custom.min',
-    'skillCtrl':'controllers/skillController'
+    'skillCtrl':'controllers/skillController',
+    'projectCtrl':'controllers/projectController',
   },
 
   shim: {
@@ -29,7 +30,8 @@ require.config({
     'angular-route':['angular'],
     'homeCtrl': ['angular'],
     'skillCtrl': ['angular'],
-    'custom':['jquery','homeCtrl'],
+    'projectCtrl': ['angular'],
+    'custom':['jquery','homeCtrl','projectCtrl','plugins'],
     'bootstrap': ['jquery'],
   }
 
@@ -42,10 +44,11 @@ require([
           "homeCtrl",
           "ngHeader",
           "ngFooter",
-          "skillCtrl"          
+          "skillCtrl",
+          "projectCtrl"          
           ],function(){
 
-              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl']);
+              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl','projectCtrl']);
 
                 app.config(['$routeProvider',
                   function($routeProvider) {
@@ -64,7 +67,7 @@ require([
                       }).
                       when('/projects', {
                         templateUrl: 'partials/projects.html',
-                        controller: 'homeController'
+                        controller: 'projectController'
                       }).            
                       when('/connect', {
                         templateUrl: 'partials/connect.html',
