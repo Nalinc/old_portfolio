@@ -27,7 +27,7 @@ require.config({
 })
 
 
-require([
+define([
           "angular",
           "angular-route",
           "homeCtrl",
