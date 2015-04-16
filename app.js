@@ -20,6 +20,7 @@ require.config({
     'angular-route':['angular'],
     'homeCtrl': ['angular'],
     'skillCtrl': ['angular'],
+    'custom':['jquery','homeCtrl'],
     'bootstrap': ['jquery'],
   }
 
@@ -35,7 +36,7 @@ require([
           "skillCtrl"          
           ],function(){
 
-              var app= angular.module('Portfolio',['ngRoute']);
+              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl']);
 
                 app.config(['$routeProvider',
                   function($routeProvider) {
