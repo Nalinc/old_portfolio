@@ -28,7 +28,7 @@ require.config({
     'ngHeader': ['angular'],
     'ngFooter': ['angular'],
     'angular-route':['angular'],
-    'homeCtrl': ['angular'],
+    'homeCtrl': ['angular','bootstrap'],
     'skillCtrl': ['angular'],
     'projectCtrl': ['angular'],
     'custom':['jquery','homeCtrl','projectCtrl','plugins'],
