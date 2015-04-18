@@ -516,7 +516,7 @@ ul#portfolio li {
   margin: 10px; 
   padding: 5px;
   width:30%;
-  display:inline-block;
+  float:left;
 }
 
 ul#portfolio a { display: block; width: 100%; }
@@ -555,6 +555,13 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
         padding-left: 30px;
         font-size: 15px;
     }
+    ul#portfolio li { 
+      border: 1px solid #dedede; 
+      margin: 10px; 
+      padding: 5px;
+      width:45%;
+      float:left;
+    }
 }
 
 @media (max-width: 767px){
@@ -575,8 +582,8 @@ ul#portfolio li {
   border: 1px solid #dedede; 
   margin: 10px; 
   padding: 5px;
-  width:60%;
-  display:inline-block;
+  width:100%;
+  float:left;
 }
 
 }
@@ -592,6 +599,6 @@ ul#portfolio li {
       margin: 10px; 
       padding: 5px;
       width:100%;
-      display:inline-block;
+      float:left;
     }    
 }
