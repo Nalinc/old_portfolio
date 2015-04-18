@@ -1,10 +1,13 @@
 define(function(){
 	var appCtrl=angular.module('homeCtrl',[]);
 
-	appCtrl.controller("homeController",function($scope){
+	appCtrl.controller("homeController",function($scope,$rootScope){
 
 
 		$scope.$on('$viewContentLoaded', function(){
+
+				$rootScope.showLoader= false;
+
 				var timeline = $("#timeline-carousel"),
 					timelineOpts = {
 					slideSpeed: 200,
