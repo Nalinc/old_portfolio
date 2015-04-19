@@ -10,28 +10,169 @@
 <!--        <link rel="stylesheet" href="css/magnific-popup.css">  -->
         <link rel="stylesheet" href="css/owl.carousel.css">
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.js" data-main="app"></script>  
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.js" data-main="app"></script>  
+ -->
+
+
+<script type="text/javascript" src="node_modules/requirejs/require.js" data-main="app"></script>  
+
+<style type="text/css">
+
+
+#main {
+  height:40px;
+  width:40px;
+  background:indianred;
+  border-radius:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:100;
+}
+
+.loader{
+  background:#fff;
+  height:14px;
+  width:14px;
+  border-radius:100%;
+  position:absolute;
+  margin:auto;
+}
+
+.ball-one {
+  top:0;
+  left:0;
+  right:65px;
+  bottom:65px;
+  animation: anim 2s infinite ease-in;
+}
+
+@keyframes anim {
+  0%{
+    background:skyblue;
+    right:65px;
+    bottom:65px;
+    z-index:150;
+  }
+  33%{
+    right:-65px;
+    bottom:-65px;
+  }
+  66%{
+    width:10px;
+    height:10px;
+  }
+  99%{
+    right:65px;
+    bottom:65px;
+    height:14px;
+    width:14px;
+    z-index:0;
+  }
+   100%{
+    background:skyblue;
+  }
+}
+
+.ball-two {
+  top:0;
+  right:0;
+  left:65px;
+  bottom:65px;
+  animation: anim-two 2s infinite ease-in;
+  animation-delay: .4s;
+}
+
+@keyframes anim-two {
+  0%{
+    background:green;
+    left:65px;
+    bottom:65px;
+    z-index:150;
+  }
+  33%{
+    left:-65px;
+    bottom:-65px;
+  }
+  66%{
+    width:10px;
+    height:10px;
+  }
+  99%{
+    left:65px;
+    bottom:65px;
+    height:14px;
+    width:14px;
+    z-index:0;
+  }
+  100%{
+    background:green;
+  }
+}
+
+.ball-three {
+  top:-65px;
+  right:0;
+  left:0;
+  bottom:0;
+  animation: anim-three 2s infinite ease-in;
+  animation-delay: .8s;
+}
+
+@keyframes anim-three {
+  0%{
+    background:#C9CC01;
+    top:-65px;
+    z-index:150;
+  }
+  33%{
+    top:65px;
+  }
+  66%{
+    width:10px;
+    height:10px;
+  }
+  99%{
+    top:-65px;
+    height:14px;
+    width:14px;
+    z-index:0;
+  }
+   100%{
+    background:#C9CC01;
+  }
+}
+</style> 
 
     </head>
     <body>
         
         <ng-header></ng-header>
 
+        <div id="loader" ng-if="showLoader" class="preloader">
+                <!--
+                    <div id="preloader_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> 
+                -->
+                <div id="main" class="loader"></div>
+                <div class='ball-one loader'></div>
+                <div class='ball-two loader'></div>
+                <div class='ball-three loader'></div>
+                <div class="text">Just a sec.</div>
+        </div>
+
         <ng-view></ng-view> 
 
         <ng-footer></ng-footer>
 
-        <div ng-if="showLoader" id="loader">
-                <div id="preloader_1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="text">Just a sec.</div>
-        </div>
+
 
     </body>
 </html>

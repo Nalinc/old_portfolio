@@ -1,4 +1,4 @@
-
+  
 require.config({
   waitSeconds: 0,
   paths:{
@@ -19,20 +19,25 @@ require.config({
     'ngHeader':'directives/ngHeader', 
     'ngFooter':'directives/ngFooter',
     'plugins':'js/plugins.min',
-    'custom':'js/custom.min',
+    'custom':'js/custom',
     'skillCtrl':'controllers/skillController',
     'projectCtrl':'controllers/projectController',
+    'raphael':'js/raphael',
+    'init':'js/init'
   },
 
   shim: {
+    'angular':['jquery'],
     'ngHeader': ['angular'],
     'ngFooter': ['angular'],
     'angular-route':['angular'],
     'homeCtrl': ['angular','bootstrap'],
     'skillCtrl': ['angular'],
     'projectCtrl': ['angular'],
-    'custom':['jquery','homeCtrl','projectCtrl','plugins'],
+    'custom':['jquery','plugins'],
     'bootstrap': ['jquery'],
+    'raphael':['jquery'],
+    'init':['raphael'],
   }
 
 })

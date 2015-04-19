@@ -1,4 +1,4 @@
-define(function(){
+define(['custom','plugins'],function(){
 	var appCtrl=angular.module('homeCtrl',[]);
 
 	appCtrl.controller("homeController",function($scope,$rootScope){

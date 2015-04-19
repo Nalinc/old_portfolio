@@ -1,6 +1,8 @@
 html,body {
     color: #333333;
     background-color:#f6f6f6;
+    width:100%;
+    height: 100%;
 }
 .navbar-inverse{
     border:0;
@@ -47,14 +49,14 @@ html,body {
 
 #loader{
 position:fixed;
-top:50%;
-left:49%;
+top:45%;
+left:45%;
 }
-#preloader > .text{
-margin-top:10px;
+#loader > .text{
+margin-top:70px;
 font-weight:bold;
 }
-#preloader_1{
+/*#preloader_1{
     position:relative;
 }
 #preloader_1 span{
@@ -96,7 +98,7 @@ animation-delay: .9s;
     50% {height:5px;transform:translateY(0px);background:black;}
     100% {height:5px;transform:translateY(0px);background:grey;}
 }
-
+*/
 
 .container {
     min-height: 90%;
@@ -574,7 +576,7 @@ ul#filter li {
   border: 1px solid #dedede;
   display:inline-block;
   line-height: 16px;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 5px;
 }
 
@@ -601,4 +603,34 @@ ul#portfolio li {
       width:100%;
       float:left;
     }    
+}
+
+
+.skillContainer{
+  width: 100%;
+  height:100%;
+}
+
+
+#content {
+position:relative;
+height:100%;
+width: 100%;
+}
+
+#content > #diagram {
+height:auto;
+}
+
+#content > .skillText{
+  height:auto;
+}
+
+.get {
+display:none;
+}
+
+
+.connect{
+
 }

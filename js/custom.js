@@ -7,55 +7,6 @@
 		$pageContents = $(".page-contents"),
 		supportTransitions = Modernizr.csstransitions;
 
-	/** Masonry Grids Config **/
-	function masonryConfig() {
-		var $item = $("> li.grid-item", $masonryGrid);
-
-		function masonryInit() {
-			$masonryGrid.masonry({
-				itemSelector: "li.grid-item"
-			});
-		}
-		// Centering Full Layout Vertically
-		function centeringLayout() {
-			var wH = $("html").outerHeight(),
-				contH = $masonryGrid.outerHeight();
-
-			$masonryGrid.css("margin-top", Math.abs(wH/2 - contH/2));
-		}
-		// Re-order Layout
-		function reArrange() {
-			function compare(a, b) {
-				return ($(a).data("cell") > $(b).data("cell")) ? 1 : -1;
-			}
-			$item.sort(compare).prependTo($masonryGrid.selector);
-		}
-
-		// Init Events & functions
-		masonryInit();	// First Time Initialization
-		$(window).on("load resize", function(e) {
-			var width = $(this).width()
-			reArrange();	// call reArrange Function (on every resize)
-			// Custom Arrangement -- change acc. to your needs
-			if(width <= 480) {
-				$("[data-cell=1]").after($("[data-cell=3]"));
-				$("[data-cell=8]").after($("[data-cell=5]"));
-			}
-			else if(width <= 1200) {
-				if(width <= 991) {
-					$("[data-cell=5]").after($("[data-cell=8]"));
-				}
-				$("[data-cell=4]").after($("[data-cell=7]"));
-				$("[data-cell=6]").after($("[data-cell=5]"));
-			}
-
-			$masonryGrid.masonry("destroy");	// destroy previous initialization
-			masonryInit();	// Reinitialize
-			centeringLayout();	// Center the Layout Vertically
-		});
-
-	}
-
 
 	/** Own Carousel Config **/
 	function owlCarouselConfig() {
@@ -309,7 +260,6 @@
 
 	/** Initialization of all Functions Here **/
 	function init() {
-		masonryConfig();
 		owlCarouselConfig();
 		isotopeConfig();
 		magnificPopupConfig() 
