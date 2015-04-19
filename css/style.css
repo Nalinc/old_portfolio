@@ -1,8 +1,9 @@
 #loader{
 position:fixed;
 top:45%;
-left:45%;
-margin:0;
+text-align: center;
+width:100%;
+margin: 0 auto;
 padding:0;
 }
 #loader > .text{
