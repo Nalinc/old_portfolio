@@ -1,3 +1,69 @@
+
+.cube {
+  width: 150px;
+  text-align: center;
+  margin: 20px auto;
+  height: 150px;
+
+  -webkit-transition: -webkit-transform .33s;
+  transition: transform .33s; /* Animate the transform properties */
+
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; /* <-NB */
+}
+
+/* The two faces of the cube */
+.flippety,.flop {
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189, .8);
+
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+  box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+  height: 150px;
+}
+
+.cube img{
+  width:150px;
+  height:150px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+
+}
+
+/* Position the faces */
+.flippety {
+  -webkit-transform: translateZ(70px);
+  transform: translateZ(70px);
+}
+
+.flop {
+  -webkit-transform: rotateX(-90deg) translateZ(-70px);
+  transform: rotateX(-90deg) translateZ(-70px);
+}
+
+/* Rotate the cube */
+.cube:hover {
+  -webkit-transform: rotateX(89deg);
+  transform: rotateX(89deg); /* Text bleed at 90º */
+}
+
+.textContent{
+  text-align:justify;
+}
+
+#loader{
+position:fixed;
+top:45%;
+left:45%;
+}
+#loader > .text{
+margin-top:70px;
+font-weight:bold;
+}
+
 html,body {
     color: #333333;
     background-color:#f6f6f6;
@@ -46,60 +112,6 @@ html,body {
 #navbarCollapse > ul >li >a:hover{
     color:#ffc;
 }
-
-#loader{
-position:fixed;
-top:45%;
-left:45%;
-}
-#loader > .text{
-margin-top:70px;
-font-weight:bold;
-}
-/*#preloader_1{
-    position:relative;
-}
-#preloader_1 span{
-    display:block;
-    bottom:0px;
-    width: 9px;
-
-    height: 5px;
-    background:black;
-    position:absolute;
-    animation: preloader_1 1.5s  infinite ease-in-out;
-}
- 
-#preloader_1 span:nth-child(2){
-left:11px;
-animation-delay: .2s;
- 
-}
-#preloader_1 span:nth-child(3){
-left:22px;
-animation-delay: .4s;
-}
-#preloader_1 span:nth-child(4){
-left:33px;
-animation-delay: .6s;
-}
-#preloader_1 span:nth-child(5){
-left:44px;
-animation-delay: .8s;
-}
-#preloader_1 span:nth-child(6){
-left:55px;
-animation-delay: .9s;
-}
-
-@keyframes preloader_1 {
-    0% {height:5px;transform:translateY(0px);background:black;}
-    25% {height:30px;transform:translateY(15px);background:grey;}
-    50% {height:5px;transform:translateY(0px);background:black;}
-    100% {height:5px;transform:translateY(0px);background:grey;}
-}
-*/
-
 .container {
     min-height: 90%;
     height: auto !important;
@@ -632,5 +644,8 @@ display:none;
 
 
 .connect{
-
+  color:#282828;
+  font-size:15px;
+  line-height:26px;
 }
+
