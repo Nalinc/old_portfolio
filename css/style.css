@@ -572,13 +572,11 @@ width: auto;
 height: auto;
 display: inline-block;
 bottom: 0;
-margin:-40px 10px 10px 10px;
 vertical-align: bottom;
 }
 .dock ul li a {
 display: block;
 height: 70px;
-margin:5px;
 width: 70px;
 position: relative;
 -webkit-transition-property: width, height,margin-top;
@@ -591,6 +589,7 @@ position: relative;
 .dock ul li a:hover {
 width: 80px;
 height: 80px;
+margin:-10px;
 }
 .dock ul li a img {
 width: 100%;

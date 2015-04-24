@@ -1,2 +1,2 @@
 # nalinc.github.io
-My portfolio
+My personal portfolio
