@@ -1,2 +1,2 @@
-## nalinc.github.io
+# nalinc.github.io
 My portfolio
