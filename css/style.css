@@ -522,6 +522,9 @@ ul#portfolio a { display: block; width: 100%; }
 ul#portfolio a:hover { text-decoration: none; }
 ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5px; width:100%;}
 
+#diagramContainer > #diagram{
+  text-align:center;
+}
 /*div#container { margin: 20px auto 0; overflow: hidden; width: 672px; }
 
 ul#filter li { 
@@ -549,6 +552,76 @@ ul#portfolio a:hover { text-decoration: none; }
 ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5px; }
 
 */
+
+.dock ul{
+display: inline-block;
+width: auto;
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+.dock  li {
+width: auto;
+height: auto;
+display: inline-block;
+bottom: 0;
+margin:-40px 10px 10px 10px;
+vertical-align: bottom;
+}
+.dock ul li a {
+display: block;
+height: 70px;
+width: 70px;
+position: relative;
+-webkit-transition-property: width, height,margin-top;
+-webkit-transition-duration: 0.5s;
+-o-transition-property: width, height,margin-top;
+-o-transition-duration: 0.5s;
+-moz-transition-property: width, height,margin-top;
+-moz-transition-duration: 0.5s;
+}
+.dock ul li a:hover {
+width: 80px;
+height: 80px;
+margin-top: -50px;
+}
+.dock ul li a img {
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+border: none;
+padding: 0px 0px 0px 30px;
+}
+
+
+/*.dock_left{
+width: 31px;
+-webkit-transform: rotate(33deg);
+-moz-transform: rotate(33deg);
+-o-transform: rotate(33deg);
+position: relative;
+background: #EEE;
+overflow: hidden;
+float: left;
+height: 100px;
+z-index: 2;
+margin: -18px;
+}
+.dock_right{
+width: 36px;
+-webkit-transform: rotate(-33deg);
+-moz-transform: rotate(-33deg);
+-o-transform: rotate(-33deg);
+position: relative;
+background: #EEE;
+overflow: hidden;
+float: left;
+height: 100px;
+z-index: 2;
+margin: -18px;
+}*/
+
 @media (max-width: 900px){
     .wordSize{
         padding-left: 30px;

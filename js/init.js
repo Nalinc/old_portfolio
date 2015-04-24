@@ -7,22 +7,14 @@ var o = {
 	},
 	diagram: function(){
 
-		if(screen.width < 640){
-			dimension = 400; 
-			radValue = 20;
-			radInc = 14;
-			strokeValue = 12
-			strokeValueHover = 15;
-			fontStyle = '10px Arial'
-		}
-		else{
-			dimension = 600; 
-			radValue = 30;
-			radInc = 20;
-			strokeValue = 18
-			strokeValueHover = 20;
-			fontStyle = '12px Arial'
-		}
+		dimension = 400; 
+		radValue = 20;
+		radInc = 14;
+		strokeValue = 12
+		strokeValueHover = 15;
+		fontStyle = '10px Arial'
+		
+
 		var r = Raphael('diagram', dimension, dimension),
 			rad = radValue,
 			defaultText = 'Skills',
