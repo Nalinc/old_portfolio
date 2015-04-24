@@ -495,9 +495,16 @@ ul, ol, dd { margin-left: 36px; }
 .screenReader { left: -9999px; position: absolute; top: -9999px; }
 
 /*****Basic Layout*****/
-ul#filter { display:block; font-size: 16px; list-style: none; width: 100%; text-align:center;}
+ul#filter { 
+  display:block; 
+  font-size: 16px; 
+  list-style: none; 
+  width: 100%; 
+  text-align:center;
+}
+
 ul#filter li { 
-  border: 1px solid #dedede;
+
   display:inline-block;
   line-height: 16px;
   margin: 0 auto;
@@ -571,6 +578,7 @@ vertical-align: bottom;
 .dock ul li a {
 display: block;
 height: 70px;
+margin:5px;
 width: 70px;
 position: relative;
 -webkit-transition-property: width, height,margin-top;
@@ -583,7 +591,6 @@ position: relative;
 .dock ul li a:hover {
 width: 80px;
 height: 80px;
-margin-top: -50px;
 }
 .dock ul li a img {
 width: 100%;
@@ -628,7 +635,7 @@ margin: -18px;
         font-size: 15px;
     }
     ul#portfolio li { 
-      border: 1px solid #dedede; 
+
       margin: 10px; 
       padding: 5px;
       width:45%;
@@ -643,7 +650,7 @@ margin: -18px;
     }
 
     ul#filter li { 
-      border: 1px solid #dedede;
+
       display:inline-block;
       line-height: 16px;
       margin: 5px auto;
