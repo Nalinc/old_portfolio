@@ -18,7 +18,7 @@ require.config({
     'homeCtrl':'controllers/homeController',
     'ngHeader':'directives/ngHeader', 
     'ngFooter':'directives/ngFooter',
-    'plugins':'js/plugins.min',
+    'plugins':'js/plugins',
     'custom':'js/custom',
     'skillCtrl':'controllers/skillController',
     'projectCtrl':'controllers/projectController',
