@@ -1,4 +1,4 @@
-define([''],function(){
+define(['custom','plugins'],function(){
 	var sCtrl=angular.module('skillCtrl',[]);
 
 	sCtrl.controller("skillController",function($scope){
