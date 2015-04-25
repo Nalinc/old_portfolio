@@ -23,7 +23,8 @@ require.config({
     'skillCtrl':'controllers/skillController',
     'projectCtrl':'controllers/projectController',
     'raphael':'js/raphael',
-    'init':'js/init'
+    'init':'js/init',
+    'texteffect':'js/texteffect'
   },
 
   shim: {
@@ -38,6 +39,7 @@ require.config({
     'bootstrap': ['jquery'],
     'raphael':['jquery'],
     'init':['raphael'],
+    'texteffect':['jquery']
   }
 
 })

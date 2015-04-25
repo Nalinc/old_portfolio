@@ -1,4 +1,4 @@
-define(['custom','plugins'],function(){
+define(['custom','plugins','texteffect'],function(){
 	var appCtrl=angular.module('homeCtrl',[]);
 
 	appCtrl.controller("homeController",function($scope,$rootScope){
@@ -24,6 +24,8 @@ define(['custom','plugins'],function(){
 			timeline.owlCarousel(timelineOpts);
 
 		});
+	    $(".subtitle").scrambledWriter();
+
 
 	});
 
