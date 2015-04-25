@@ -7,9 +7,9 @@ define(['custom','plugins','texteffect'],function(){
 		$scope.$on('$viewContentLoaded', function(){
 
 			$rootScope.showLoader= false;
+		    $(".subtitle").scrambledWriter();
 
 		});
-	    $(".subtitle").scrambledWriter();
 
 
 	});
