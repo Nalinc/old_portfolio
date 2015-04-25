@@ -7,6 +7,7 @@ define(['custom','plugins'],function(){
 		$scope.$on('$viewContentLoaded', function(){
 
 			$rootScope.showLoader= false;
+			$.noConflict();
 		    $(".subtitle").scrambledWriter();
 
 		});
