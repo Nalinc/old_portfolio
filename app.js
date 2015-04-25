@@ -32,12 +32,13 @@ require.config({
     'ngHeader': ['angular'],
     'ngFooter': ['angular'],
     'angular-route':['angular'],
-    'homeCtrl': ['angular','bootstrap','texteffect'],
+    'homeCtrl': ['angular','bootstrap'],
     'skillCtrl': ['angular'],
     'projectCtrl': ['angular'],
     'custom':['jquery','plugins'],
     'bootstrap': ['jquery'],
     'raphael':['jquery'],
+    'plugins':['jquery'],
     'init':['raphael'],
     'texteffect':['jquery']
   }
@@ -52,7 +53,6 @@ require([
           "ngHeader",
           "ngFooter",
           "skillCtrl",
-          "texteffect",
           "projectCtrl"          
           ],function(){
 

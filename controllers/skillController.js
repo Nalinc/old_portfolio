@@ -6,7 +6,7 @@ define(['custom','plugins'],function(){
 		// $("#circular-skills").skillChart()
 
 
-				var timeline = $("#timeline-carousel"),
+				var timeline = jQuery("#timeline-carousel"),
 					timelineOpts = {
 					slideSpeed: 200,
 					paginationSpeed: 200,
