@@ -52,6 +52,7 @@ require([
           "ngHeader",
           "ngFooter",
           "skillCtrl",
+          "texteffect",
           "projectCtrl"          
           ],function(){
 
