@@ -32,7 +32,7 @@ require.config({
     'ngHeader': ['angular'],
     'ngFooter': ['angular'],
     'angular-route':['angular'],
-    'homeCtrl': ['angular','bootstrap'],
+    'homeCtrl': ['angular','bootstrap','texteffect'],
     'skillCtrl': ['angular'],
     'projectCtrl': ['angular'],
     'custom':['jquery','plugins'],
