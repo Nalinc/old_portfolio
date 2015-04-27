@@ -24,7 +24,8 @@ require.config({
     'projectCtrl':'controllers/projectController',
     'raphael':'js/raphael',
     'init':'js/init',
-    'texteffect':'js/texteffect'
+    'texteffect':'js/texteffect',
+    'angular-animate':'http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate'
   },
 
   shim: {
@@ -32,9 +33,10 @@ require.config({
     'ngHeader': ['angular'],
     'ngFooter': ['angular'],
     'angular-route':['angular'],
-    'homeCtrl': ['angular','bootstrap'],
-    'skillCtrl': ['angular'],
-    'projectCtrl': ['angular'],
+    'angular-animate':['angular'],
+    'homeCtrl': ['angular','bootstrap','angular-animate'],
+    'skillCtrl': ['angular','angular-animate'],
+    'projectCtrl': ['angular','angular-animate'],
     'custom':['jquery','plugins'],
     'bootstrap': ['jquery'],
     'raphael':['jquery'],
@@ -49,6 +51,7 @@ require.config({
 require([
           "angular",
           "angular-route",
+          "angular-animate",
           "homeCtrl",
           "ngHeader",
           "ngFooter",
