@@ -56,7 +56,7 @@ require([
           "projectCtrl"          
           ],function(){
 
-              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl','projectCtrl']);
+              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl','projectCtrl','ngAnimate']);
 
                 app.config(['$routeProvider',
                   function($routeProvider) {

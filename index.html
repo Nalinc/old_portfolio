@@ -18,18 +18,35 @@
 
     </head>
     <body>
+<style type="text/css">
+
+.myAnimation  .container{
+}
+.myAnimation  .container.ng-enter{
+    background-color: blue;
+}
+
+.myAnimation  .container.ng-leave{
+    background-color: red;
+}
+
+.myAnimation  .container.ng-enter,.myAnimation  .container.ng-leave{
+  -webkit-transition:all linear 1.5s;
+  transition:all linear 1.5s;
+}
+
+</style>
 
         
         <ng-header></ng-header>
 
-        <ng-view></ng-view> 
+        <div ng-view class="myAnimation"></div> 
 
         <ng-footer></ng-footer>
 
         <div id="loader" ng-if="showLoader" class="preloader">
             <img src="images/loader.gif">
         </div>
-
 
     </body>
 
