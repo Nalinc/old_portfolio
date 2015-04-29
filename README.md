@@ -1,2 +1,2 @@
 # nalinc.github.io
-My personal portfolio
+My portfolio in angularjs
