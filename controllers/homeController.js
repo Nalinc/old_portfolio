@@ -1,4 +1,4 @@
-define(['texteffect'],function(){
+define(['texteffect','jquery'],function(){
 	var appCtrl=angular.module('homeCtrl',[]);
 
 	appCtrl.controller("homeController",function($scope,$rootScope){
@@ -7,11 +7,10 @@ define(['texteffect'],function(){
 		$scope.$on('$viewContentLoaded', function(){
 
 			$rootScope.showLoader= false;
-//			$.noConflict();
-		    jQuery(".subtitle").scrambledWriter();
+
+		    angular.element(".subtitle").scrambledWriter();
 
 		});
-
 
 	});
 

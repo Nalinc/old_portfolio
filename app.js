@@ -29,20 +29,20 @@ require.config({
   },
 
   shim: {
-    'angular':['jquery'],
-    'ngHeader': ['angular'],
-    'ngFooter': ['angular'],
-    'angular-route':['angular'],
-    'angular-animate':['angular'],
-    'homeCtrl': ['angular','bootstrap','angular-animate'],
-    'skillCtrl': ['angular','angular-animate'],
-    'projectCtrl': ['angular','angular-animate'],
-    'custom':['jquery','plugins'],
-    'bootstrap': ['jquery'],
-    'raphael':['jquery'],
-    'plugins':['jquery'],
-    'init':['raphael'],
-    'texteffect':['jquery']
+    'angular':{ deps: ['jquery']},
+    'ngHeader': { deps: ['angular']},
+    'ngFooter': { deps: ['angular']},
+    'angular-route':{ deps: ['angular']},
+    'angular-animate':{ deps: ['angular']},
+    'homeCtrl': { deps: ['angular','bootstrap','angular-animate']},
+    'skillCtrl': { deps: ['angular','angular-animate']},
+    'projectCtrl': { deps: ['angular','angular-animate']},
+    'custom':{ deps: ['jquery','plugins']},
+    'bootstrap': { deps: ['jquery']},
+    'raphael':{ deps: ['jquery']},
+    'plugins':{ deps: ['jquery']},
+    'init':{ deps: ['raphael']},
+    'texteffect':{ deps: ['jquery']}
   }
 
 })
