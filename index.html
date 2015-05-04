@@ -34,42 +34,31 @@
         </div>
 <style type="text/css">
 
-.view-animate-container{
-    width: 102%;
-    overflow:auto;
+.view-animate.ng-enter { 
+  animation: scaleUp 1s both ease-in; z-index: 8888; 
+  -webkit-animation: scaleUp 1s both ease-in; z-index: 8888; 
 }
-.view-animate-container,.view-animate{
-    height: 100%;
-}
-
-.ng-enter       { animation: scaleUp 0.5s both ease-in; z-index: 8888;}
-.ng-leave       { animation: slideOutLeft 0.5s both ease-in; z-index: 9999;}
-
-.view-animate.ng-enter, .view-animate.ng-leave {
-
+.view-animate.ng-leave { 
+  animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
+  -webkit-animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
 }
 
-.view-animate.ng-enter {
-    animation: scaleUp 0.5s both ease-in;
-}
 
-.view-animate.ng-leave{
-   animation:slideOutLeft 0.5s both ease-in; 
-}
-.view-animate.ng-enter.ng-enter-active {
-    animation: scaleUp 1s both ease-in;
-}
-
-.view-animate.ng-leave.ng-leave-active {
-    animation:slideOutLeft 0.5s both ease-in; 
-}
 @keyframes slideOutLeft {
-    to      { -webkit-transform: translateX(-100%);transform: translateX(-100%); }
-}
-@keyframes scaleUp {
-    from    { opacity: 0.3; -webkit-transform: scale(0.8); transform: scale(0.8); }
+    to      { transform: translateX(-100%); }
 }
 
+@-webkit-keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes scaleUp {
+    from    { opacity: 0.3; transform: scale(0.8);}
+}
+
+@-webkit-keyframes scaleUp {
+    from    { opacity: 0.3; transform: scale(0.8);}
+}
 </style>
 
     </body>
