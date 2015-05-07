@@ -608,7 +608,7 @@ padding: 0px 0px 0px 30px;
     }
     ul#portfolio li { 
 
-      margin: 10px; 
+      margin: 0px; 
       padding: 5px;
       width:45%;
       float:left;
@@ -631,7 +631,7 @@ padding: 0px 0px 0px 30px;
 
     ul#portfolio li { 
       border: 1px solid #dedede; 
-      margin: 10px; 
+      margin: 0px; 
       padding: 5px;
       width:100%;
       float:left;
@@ -655,7 +655,7 @@ padding: 0px 0px 0px 30px;
 
     ul#portfolio li { 
       border: 1px solid #dedede; 
-      margin: 10px; 
+      margin: 0px; 
       padding: 5px;
       width:100%;
       float:left;
