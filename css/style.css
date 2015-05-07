@@ -520,7 +520,7 @@ ul#portfolio {display:block; list-style: none; margin-left: 0; width: 100%; text
 
 ul#portfolio li { 
   border: 1px solid #dedede; 
-  margin: 10px; 
+  margin: 0px; 
   padding: 5px;
   width:30%;
   float:left;
