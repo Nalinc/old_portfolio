@@ -640,6 +640,10 @@ padding: 0px 0px 0px 30px;
     padding:0;
     margin-left:-40px;
     }
+    #diagramContainer > #diagram{
+    margin-left:40px;
+    }
+
     #diagramContainer .title{
     margin-left:50px;
     }
@@ -652,11 +656,29 @@ padding: 0px 0px 0px 30px;
     padding:0;
     margin-left:-80px;
     }
+    #diagramContainer{
+    padding:0;
+    margin-left:-80px;
+    } 
+    #diagramContainer > #diagram{
+    margin-left:30px;
+    }       
     #diagramContainer .title{
     margin-left:90px;
     }
 }
 
+@media (max-width: 310px){
+    #diagrammContainer > #diagram{
+    margin-left:20px;
+    } 
+}
+
+@media (max-width: 290px){
+    #diagramContainer > #diagram{
+    margin-left:10px;
+    } 
+}
 
 .skillContainer{
   width: 100%;
