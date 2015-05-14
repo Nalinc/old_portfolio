@@ -4,16 +4,16 @@ require.config({
   paths:{
     'angular':[
                 'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min',
-                'node_modules/angular/angular.min'
+                '../node_modules/angular/angular.min'
               ],
-    'jquery':'node_modules/jquery/dist/jquery.min',
+    'jquery':'../node_modules/jquery/dist/jquery.min',
     'angular-route':[
                       'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route',
-                      'node_modules/angular-route/angular-route.min'
+                      '../node_modules/angular-route/angular-route.min'
                     ],
     'bootstrap':[
                   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min',
-                  'node_modules/bootstrap/dist/js/bootstrap.min'
+                  '../node_modules/bootstrap/dist/js/bootstrap.min'
                 ],
     'homeCtrl':'controllers/homeController',
     'ngHeader':'directives/ngHeader', 
