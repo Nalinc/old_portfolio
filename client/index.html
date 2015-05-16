@@ -11,27 +11,27 @@
 <!--        <link rel="stylesheet" href="css/magnific-popup.css">  -->
         <link rel="stylesheet" href="css/owl.carousel.css">
 
+        <script type="text/javascript" src="node_modules/requirejs/require.js" data-main="app"></script>  
+
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.js" data-main="app"></script>  
  -->
-
-
-        <script type="text/javascript" src="node_modules/requirejs/require.js" data-main="app"></script>  
 
     </head>
     <body>
 
-        
         <ng-header></ng-header>
 
-  <div class="view-animate-container">
-    <div ng-view class="view-animate"></div>
-  </div>
+        <div class="view-animate-container">
+            <div ng-view class="view-animate"></div>
+        </div>
 
         <ng-footer></ng-footer>
 
-        <div id="loader" ng-if="showLoader" class="preloader">
+
+<!--         <div id="loader" ng-if="showLoader" class="preloader">
             <img src="images/loader.gif">
         </div>
+ -->
 <style type="text/css">
 .view-animate-container{
     width: 102%;
@@ -68,6 +68,7 @@
 }
 </style>
 
-    </body>
+
+     </body>
 
 </html>

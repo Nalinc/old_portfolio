@@ -16,6 +16,7 @@ require.config({
                   'node_modules/bootstrap/dist/js/bootstrap.min'
                 ],
     'homeCtrl':'controllers/homeController',
+    'aboutCtrl':'controllers/aboutController',
     'ngHeader':'directives/ngHeader', 
     'ngFooter':'directives/ngFooter',
     'plugins':'js/plugins',
@@ -34,7 +35,8 @@ require.config({
     'ngFooter': { deps: ['angular']},
     'angular-route':{ deps: ['angular']},
     'angular-animate':{ deps: ['angular']},
-    'homeCtrl': { deps: ['angular','bootstrap','angular-animate']},
+    'aboutCtrl': { deps: ['angular','bootstrap','angular-animate']},
+    'homeCtrl': { deps: ['angular','angular-animate']},    
     'skillCtrl': { deps: ['angular','angular-animate']},
     'projectCtrl': { deps: ['angular','angular-animate']},
     'custom':{ deps: ['jquery','plugins']},
@@ -56,10 +58,11 @@ require([
           "ngHeader",
           "ngFooter",
           "skillCtrl",
+          "aboutCtrl",
           "projectCtrl"          
           ],function(){
 
-              var app= angular.module('Portfolio',['ngRoute','homeCtrl','appFooter','appHeader','skillCtrl','projectCtrl','ngAnimate']);
+              var app= angular.module('Portfolio',['ngRoute','homeCtrl','aboutCtrl','appFooter','appHeader','skillCtrl','projectCtrl','ngAnimate']);
 
                 app.config(['$routeProvider',
                   function($routeProvider) {
@@ -70,7 +73,7 @@ require([
                       }).
                       when('/about', {
                         templateUrl: 'partials/about.html',
-                        controller: 'homeController'
+                        controller: 'aboutController'
                       }).
                       when('/skills', {
                         templateUrl: 'partials/skills.html',
