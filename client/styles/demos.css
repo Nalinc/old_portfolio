@@ -1,0 +1,193 @@
+/**
+ * CSS for Demos on MattBango.com
+ * @author: Matt Bango
+ * @version: 1.01
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 980px;
+}
+
+.wrap-thin {
+  margin: 0 auto;
+  width: 921px;
+}
+
+a.logo {
+    border: none;
+    display: block;
+    float: left;
+}
+
+a.logo img {
+    border: none;
+}
+
+h1 {
+    border-left: 1px solid #5f5f5f;
+    color: #e9e9e9;
+    float: left;
+    line-height: 25px;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+h2 {
+    border-bottom: 1px solid #eee;
+    color: #ddd;
+    font-family: Georgia, "Times New Roman", Times, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 4px;
+    margin: 0 0 30px 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.demo {
+    margin-top: 45px;
+}
+
+.demo-thin {
+  margin-top: 15px;
+}
+
+.demo-header {
+    background-color: #333;
+    border-bottom: 2px solid #777;
+    display: block;
+    padding: 15px 20px;
+}
+
+.demo-header a.read {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    background-color: #4f4f4f;
+    border: 1px solid #555;
+    display: block;
+    color: #ccc;
+    float: right;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+.demo-header a.read:hover {
+    background-color: #555;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.clear {
+    clear:both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
+/* Ads
+------------------------------------------------------------------------------------- */
+body .one .bsa_it_ad {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    padding: 15px;
+    text-align: center;
+}
+
+body .one .bsa_it_ad:hover img {
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+body .one .bsa_it_ad .bsa_it_i {
+    display: block;
+    padding: 0;
+    float: none;
+    margin: 0 0 5px;
+}
+
+body .one .bsa_it_ad .bsa_it_i img {
+    padding: 0;
+    border: none;
+}
+
+body .one .bsa_it_ad .bsa_it_t {
+    padding: 6px 0;
+    color: #666666;
+}
+
+body .one .bsa_it_ad .bsa_it_d {
+    padding: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+body .one .bsa_it_p {
+    display: none;
+}
+
+body #bsap_aplink,
+body #bsap_aplink:hover {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+body #bsap_aplink {
+    color: #bbb;
+}
+
+body #bsap_aplink:hover {
+    color: #777;
+}
+
+body .bsap .one .bsa_it_ad {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+body .adsPack {
+  margin: 100px auto 50px auto;
+  width: 300px
+}
