@@ -1,4 +1,4 @@
-define(function(){
+define(['bootstrap'],function(){
 	var app= angular.module('appHeader',[]);
 
 	app.directive("ngHeader",function(){

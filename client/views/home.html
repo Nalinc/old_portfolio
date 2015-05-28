@@ -6,14 +6,16 @@
 	}
 	.rw-wrapper{
 		display:block;
-		text-align:center;
-		position: relative;
-		margin-top:20%;
-		margin-left:-20px;
+		position:fixed;
+		top:45%;
+		text-align: center;
+		width:100%;
+		margin: 0 auto;
+		padding:0;
 	}
 	.rw-sentence span{
 		color: white;
-		font-size: 25px;
+		font-size: 22px;
 		font-weight: normal;
 	}
 	.rw-words{
@@ -23,6 +25,9 @@
 		position: absolute;
 		opacity: 0;
 		overflow: hidden;
+		left:0;
+		right:0;
+		margin:auto;
 		-webkit-animation: rotateWord 18s linear infinite 0s;
 		-ms-animation: rotateWord 18s linear infinite 0s;
 		animation: rotateWord 18s linear infinite 0s;
@@ -87,20 +92,30 @@
 	}	
 	</style>
 
-        <div id="foo">
 			<!-- Codrops top bar -->
 			<section class="rw-wrapper">
 				<h2 class="rw-sentence">
 					<div class="rw-words rw-words-1">
-						<span>Nalin Chhibber</span>
-						<span>नलिन छिब्बर</span>
-						<span>納林 </span>
-						<span>نلن </span>
-						<span>ナリン </span>
-						<span>Налин </span>
+						<span title="English">Nalin Chhibber</span>
+						<span title="Hindi">नलिन छिब्बर</span>
+						<span title="Chinese">納林 </span>
+						<span title="Urdu">نلن </span>
+						<!-- <span>ナリン </span> -->
+						<!-- <span>Налин </span> -->
+						<span title="Binary">
+							01001110 01100001 01101100 01101001<br> 
+							01101110 00100000 01000011 01101000 <br>
+							01101000 01101001 01100010 01100010 <br>
+									01100101 01110010
+						</span>
+						<span title="Morse code">
+							-. .- .-.. .. -.<br>
+							-.-. .... .... .. -... -... . .-.
+
+						</span>
+
 					</div>
 				</h2>
 			</section>
 
-        </div>
 </div>
