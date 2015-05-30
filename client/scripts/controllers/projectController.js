@@ -6,8 +6,6 @@ define(['app'], function(app){
 	app.controller('projectController', function($scope){
 
 
-
-		$scope.$on('$viewContentLoaded', function(){	
 /*			$("#filter-port").isotope({filter: "*"});
 
 			$("#filter-nav").find("a").on("click touchstart", function(e) {
@@ -49,7 +47,7 @@ define(['app'], function(app){
   		});
 
 
-		});
+		
 
 	});
 

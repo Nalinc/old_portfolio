@@ -25,7 +25,8 @@ define([], function()
             '/projects': {
                 templateUrl: '/views/projects.html',
                 dependencies: [
-                    'controllers/projectController'
+                    'controllers/projectController',
+                    '/scripts/lib/framework.js'
                 ]
             },
             '/connect': {
