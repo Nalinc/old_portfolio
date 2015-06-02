@@ -10,14 +10,14 @@ var require={
                       'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route',
                       'node_modules/angular-route/angular-route.min'
                     ],
-    'bootstrap':[
+/*    'bootstrap':[
                   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min',
                   'node_modules/bootstrap/dist/js/bootstrap.min'
-                ],
+                ],*/
     'app':'app',
     'homeCtrl':'controllers/homeController',
     'aboutCtrl':'controllers/aboutController',
-    'ngHeader':'directives/ngHeader', 
+    'ngHeader':'directives/ngHeader',
     'ngFooter':'directives/ngFooter',
     'plugins':'lib/plugins',
     'custom':'lib/custom',
@@ -31,16 +31,16 @@ var require={
 
   shim: {
     'app': { deps: ['angular', 'angular-route'] },
-    'angular-route': { deps: ['angular'] },  
+    'angular-route': { deps: ['angular'] },
     'ngHeader': { deps: ['angular']},
     'ngFooter': { deps: ['angular']},
     'angular-animate':{ deps: ['angular']},
-    'aboutCtrl': { deps: ['angular','bootstrap','angular-animate']},
-    'homeCtrl': { deps: ['angular','angular-animate']},    
+    'aboutCtrl': { deps: ['angular','angular-animate']},
+    'homeCtrl': { deps: ['angular','angular-animate']},
     'skillCtrl': { deps: ['angular','angular-animate']},
     'projectCtrl': { deps: ['angular','angular-animate']},
     'custom':{ deps: ['jquery','plugins']},
-    'bootstrap': { deps: ['jquery']},
+/*    'bootstrap': { deps: ['jquery']},*/
     'raphael':{ deps: ['jquery']},
     'plugins':{ deps: ['jquery']},
     'init':{ deps: ['raphael']},

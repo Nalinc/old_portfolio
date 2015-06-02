@@ -22,11 +22,11 @@ define(['app','custom','plugins'],function(app,custom,plugins){
 			timeline.owlCarousel(timelineOpts);
 
 
-  			require(["init"], function() {
+/*  			require(["init"], function() {
         // do some stuff with these require()'d dependencies
         		if(!$("svg").height())
 	        		o.init();
-    		})
+    		})*/
 		
 
 	});
