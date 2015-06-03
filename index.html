@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Nalin's World</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="fonts/elegant/styles.css">
+<!--        <link rel="stylesheet" href="css/magnific-popup.css">  -->
+
+        <script type="text/javascript" src="scripts/lib/script.min.js"></script>
+        <script type="text/javascript" src="scripts/rconfig.js"></script>
+        <script type="text/javascript" src="node_modules/requirejs/require.js" data-main="scripts/main"></script>  
+
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.js" data-main="app"></script>  
+ -->
+
+    </head>
+    <body>
+
+        <ng-header></ng-header>
+
+        <div class="view-animate-container">
+            <div ng-view class="view-animate"></div>
+        </div>
+
+        <ng-footer></ng-footer>
+
+
+        <div id="loader" ng-if="showLoader" class="preloader">
+            <img src="images/loader.gif">
+        </div>
+
+<style type="text/css">
+.view-animate-container{
+    width: 102%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.view-animate-container,.view-animate{
+    height: 100%;
+}
+.view-animate.ng-enter { 
+  animation: scaleUp 0.6s both ease-in; z-index: 8888; 
+  -webkit-animation: scaleUp 0.6s both ease-in; z-index: 8888; 
+}
+.view-animate.ng-leave { 
+  animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
+  -webkit-animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
+}
+
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes scaleUp {
+    from    { opacity: 0.3; transform: scale(0.8);}
+}
+
+@-webkit-keyframes scaleUp {
+    from    { opacity: 0.3; transform: scale(0.8);}
+}
+</style>
+
+
+     </body>
+
+</html>
+
+
+
+
