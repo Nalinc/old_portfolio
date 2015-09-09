@@ -1,125 +1,68 @@
-<div>
-	<style type="text/css">
-	body{
-		background-color: black;
-		background-image: linear-gradient(90deg, rgba(255,255,255,.08) 10%, transparent 1%),
-		linear-gradient(90deg, rgba(0,0,0,.09) 1%, transparent 1%),
-		linear-gradient(90deg, transparent 1%, rgba(255,255,255,.1) 1%),
-		linear-gradient(90deg, transparent 1%, rgba(0,0,0,.19) 1%);
-		background-size: 13px, 29px, 37px, 53px;
-	}
-	.rw-wrapper{
-		display:block;
-		position:fixed;
-		top:45%;
-		text-align: center;
-		width:100%;
-		margin: 0 auto;
-		padding:0;
-	}
-	.rw-sentence span{
-		color: white;
-		font-size: 22px;
-		font-weight: normal;
-	}
-	.rw-words{
-		display: inline;
-	}
-	.rw-words-1 span{
-		position: absolute;
-		opacity: 0;
-		overflow: hidden;
-		left:0;
-		right:0;
-		margin:auto;
-		-webkit-animation: rotateWord 18s linear infinite 0s;
-		-ms-animation: rotateWord 18s linear infinite 0s;
-		animation: rotateWord 18s linear infinite 0s;
-	}
-	.rw-words-1 span:nth-child(2) { 
-	    -webkit-animation-delay: 3s; 
-		-ms-animation-delay: 3s; 
-		animation-delay: 3s; 
-	}
-	.rw-words-1 span:nth-child(3) { 
-	    -webkit-animation-delay: 6s; 
-		-ms-animation-delay: 6s; 
-		animation-delay: 6s; 
-	}
-	.rw-words-1 span:nth-child(4) { 
-	    -webkit-animation-delay: 9s; 
-		-ms-animation-delay: 9s; 
-		animation-delay: 9s; 
-	}
-	.rw-words-1 span:nth-child(5) { 
-	    -webkit-animation-delay: 12s; 
-		-ms-animation-delay: 12s; 
-		animation-delay: 12s; 
-	}
-	.rw-words-1 span:nth-child(6) { 
-	    -webkit-animation-delay: 15s; 
-		-ms-animation-delay: 15s; 
-		animation-delay: 15s; 
-	}
-	@-webkit-keyframes rotateWord {
-	    0% { opacity: 0; }
-	    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-		5% { opacity: 1; -webkit-transform: translateY(0px);}
-	    17% { opacity: 1; -webkit-transform: translateY(0px); }
-		20% { opacity: 0; -webkit-transform: translateY(30px); }
-		80% { opacity: 0; }
-	    100% { opacity: 0; }
-	}
-	@-ms-keyframes rotateWord {
-	    0% { opacity: 0; }
-	    2% { opacity: 0; -ms-transform: translateY(-30px); }
-		5% { opacity: 1; -ms-transform: translateY(0px);}
-	    17% { opacity: 1; -ms-transform: translateY(0px); }
-		20% { opacity: 0; -ms-transform: translateY(30px); }
-		80% { opacity: 0; }
-	    100% { opacity: 0; }
-	}
-	@keyframes rotateWord {
-	    0% { opacity: 0; }
-	    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
-		5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
-	    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
-		20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
-		80% { opacity: 0; }
-	    100% { opacity: 0; }
-	}
-	@media screen and (max-width: 768px){
-		.rw-sentence { font-size: 18px; }
-	}
-	@media screen and (max-width: 320px){
-		.rw-sentence { font-size: 9px; }
-	}	
-	</style>
+<!--FRONT PAGE-->
+            <!--ANIMATED TEXT-->    
+            <div class="content container">
 
-			<!-- Codrops top bar -->
-			<section class="rw-wrapper">
-				<h2 class="rw-sentence">
-					<div class="rw-words rw-words-1">
-						<span title="English">Nalin Chhibber</span>
-						<span title="Hindi">नलिन छिब्बर</span>
-						<span title="Chinese">納林 </span>
-						<span title="Urdu">نلن </span>
-						<span>ナリン </span>
-						<span>Налин </span>
-<!-- 						<span title="Binary">
-							01001110 01100001 01101100 01101001<br> 
-							01101110 00100000 01000011 01101000 <br>
-							01101000 01101001 01100010 01100010 <br>
-									01100101 01110010
-						</span>
-						<span title="Morse code">
-							-. .- .-.. .. -.<br>
-							-.-. .... .... .. -... -... . .-.
+                <h2 class="wow bounceInDown" data-wow-duration="3s" data-wow-delay="0s">
+                    Hello World! <br/> <span>You have landed on the homepage of</span> 
+                </h2>
+            
+                <h3 class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="2s">
+                    <span>
+                        Nalin Chhibber
+                    </span>
+                </h3>
 
-						</span>
- -->
-					</div>
-				</h2>
-			</section>
+                <!--ROTATING TEXT-->    
+                <h4 class="text-rotator-fade wow bounceInDown" data-wow-duration="2s" data-wow-delay="2s">
+				<section class="rw-wrapper">
+					<h2 class="rw-sentence">
+						<div class="rw-words rw-words-1">
+							<span>I make things for web</span>
+							<span>I develop applications for Desktop</span>
+							<span> I like cryptography </span>
+							<span> dgfdfdf </span>
 
-</div>
+	<!-- 						<span title="Binary">
+								01001110 01100001 01101100 01101001<br> 
+								01101110 00100000 01000011 01101000 <br>
+								01101000 01101001 01100010 01100010 <br>
+										01100101 01110010
+							</span>
+							<span title="Morse code">
+								-. .- .-.. .. -.<br>
+								-.-. .... .... .. -... -... . .-.
+
+							</span>
+	 -->
+						</div>
+					</h2>
+				</section>
+                </h4>
+
+                <!--HOURGLASS-->    
+                <div class="si-icons si-icons-hover wow rotateIn pad30" data-wow-duration="3s" data-wow-delay="4s">
+                    <span class="si-icon si-icon-hourglass" data-icon-name="hourglass" style="display:none"></span>
+                </div>
+
+                <br/><br/>
+            
+                <!--LINKS-->
+                <span class="link-effect wow bounceIn" data-wow-duration="2s" data-wow-delay="4.5s">
+                    <i class="fa fa-arrow-left marg-right5"></i>
+                    <a href="#/about">about</a>
+                </span>
+            
+                <i class="fa fa-dot-circle-o size wow bounceIn" data-wow-duration="2s" data-wow-delay="6s"></i>
+            
+                <span class="link-effect wow bounceIn" data-wow-duration="2s" data-wow-delay="6.5s">
+                    <a href="#/contact">contact</a>
+                    <i class="fa fa-arrow-right marg-left5"></i>
+                </span>
+                <!--//LINKS-->
+        
+                <p class="copyright">&copy; 2010-2015 Nalin Chhibber | All rights reserved</p>
+            </div>
+
+                <!--//FRONT PAGE-->
+
+    <script src="scripts/lib/wow.js"></script>
