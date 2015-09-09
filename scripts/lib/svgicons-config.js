@@ -1,6 +1,6 @@
 var svgIconConfig = {
 	clock : { 
-		url : 'img/clock.svg',
+		url : 'images/svg/clock.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(2)', 
@@ -19,7 +19,7 @@ var svgIconConfig = {
 		]
 	},
 	mail : {
-		url : 'img/mail.svg',
+		url : 'images/svg/mail.svg',
 		animation : [
 			{ 
 				el : 'path', 
@@ -31,7 +31,7 @@ var svgIconConfig = {
 		]
 	},
 	hourglass : {
-		url : 'img/hourglass.svg',
+		url : 'images/svg/hourglass.svg',
 		animation : [
 			{ 
 				el : 'path:nth-child(1)', 
@@ -50,7 +50,7 @@ var svgIconConfig = {
 		]
 	},
 	flag : {
-		url : 'img/flag.svg',
+		url : 'images/svg/flag.svg',
 		animation : [
 			{ 
 				el : 'path', 
