@@ -684,8 +684,17 @@ input { outline: none; }
   overflow: hidden;
 }
 
+.home_social{
+  text-align: center;
+}
+
+.home_social > a > img{
+  display: inline;
+  padding:1px;
+}
+
 h1.title {
-    color: #6f6f6f;
+    color: cyan;
     padding-top: 7.5px;
     font-size: 1.667em;
 }
@@ -696,6 +705,15 @@ h1.title {
   text-align: left;
   font-size: 1.667em;
   margin:0;
+}
+.text {
+    background-color: honeydew;
+    color: black;
+    padding: 0 5px;
+    display: inline-block;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 .dock ul{
@@ -744,6 +762,61 @@ padding: 0px 0px 0px 30px;
 .view-animate-container,.view-animate{
     height: 100%;
 }
+
+ul#filter { 
+  display:block; 
+  font-size: 16px; 
+  list-style: none; 
+  width: 100%; 
+  text-align:center;
+}
+
+ul#filter li { 
+
+  display:inline-block;
+  line-height: 16px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+ul#filter a { color: #999; text-decoration: none; }
+ul#filter li.current a, ul#filter a:hover { text-decoration: none; }
+ul#filter li.current a { color: #333; font-weight: bold; }
+
+ul#portfolio {display:block; list-style: none; margin-left: 0; width: 100%; text-align:center;}
+
+ul#portfolio li { 
+  border: 1px solid #dedede; 
+  margin: 10px; 
+  padding: 5px;
+  width:30%;
+  float:left;
+}
+
+ul#portfolio a { display: block; width: 100%; }
+ul#portfolio a:hover { text-decoration: none; }
+ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5px; width:100%;}
+
+.view {
+    width: 100%;
+    height: 210px;
+
+    float: left;
+    border: 1px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.view img {
+    display: block;
+    position: relative;
+    height:150px;
+}
+.view h4{
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	07: MEDIA QUERIES
@@ -830,4 +903,43 @@ padding: 0px 0px 0px 30px;
 }
 @media screen and (max-width: 320px){
   .rw-sentence { font-size: 9px; }
+}
+
+@media (max-width: 900px){
+    ul#portfolio li { 
+
+      margin: 10px; 
+      padding: 5px;
+      width:45%;
+      float:left;
+    }
+}
+
+@media (max-width: 767px){
+    ul#filter li { 
+
+      display:inline-block;
+      line-height: 16px;
+      margin: 5px auto;
+      padding: 5px;
+    }
+
+    ul#portfolio li { 
+      border: 1px solid #dedede; 
+      margin: 0px; 
+      padding: 5px;
+      width:100%;
+      float:left;
+    }
+}
+
+@media (max-width: 900px){
+    ul#portfolio li { 
+      border: 1px solid #dedede; 
+      margin: 0px; 
+      padding: 5px;
+      width:100%;
+      float:left;
+    }    
+
 }
