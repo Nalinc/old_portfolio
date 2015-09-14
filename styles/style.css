@@ -694,7 +694,7 @@ input { outline: none; }
 }
 
 h1.title {
-    color: cyan;
+    color: #ffc;
     padding-top: 7.5px;
     font-size: 1.667em;
 }
@@ -707,7 +707,7 @@ h1.title {
   margin:0;
 }
 .text {
-    background-color: honeydew;
+    background-color: cadetblue;
     color: black;
     padding: 0 5px;
     display: inline-block;
@@ -781,7 +781,7 @@ ul#filter li {
 
 ul#filter a { color: #999; text-decoration: none; }
 ul#filter li.current a, ul#filter a:hover { text-decoration: none; }
-ul#filter li.current a { color: #333; font-weight: bold; }
+ul#filter li.current a { color: #ffc; font-weight: bold; }
 
 ul#portfolio {display:block; list-style: none; margin-left: 0; width: 100%; text-align:center;}
 
