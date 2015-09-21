@@ -23,7 +23,7 @@ html, body { height: 100%; padding: 0; margin: 0; }
 
 body {
  	font:16px/24px 'Lato', sans-serif;
-	background:#303030 !important;
+	background:#f6f6f6 !important;
 	font-weight: 400;
 	text-align:center;
 	text-rendering: optimizeLegibility;
@@ -31,7 +31,7 @@ body {
 	overflow:hidden;
  	height:100%;
     width:100%;
-    color:white;
+    color:#000;
 }
 
 html { font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100%;}
@@ -98,14 +98,14 @@ a {
 	right: 1%;
 	z-index: 1;
 	text-align:center;
-	color: #fff;
+	color: #000;
 }
 
 /**** CLOSE BUTTON ****/
 .close, #close {
 	font-size: 35px;
 	background: transparent;
-	color: #fff;
+	color: #000;
 	opacity: 0.6;
 	cursor: pointer;
 	border: 0;-webkit-transition: all 0.3s ease-in-out;
@@ -114,22 +114,22 @@ a {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.close:hover, #close:hover  { opacity: 0.8; color: #fff; }
+.close:hover, #close:hover  { opacity: 0.8; color: #000; }
 
 /**** TYPOGRAPHY ****/
-h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; color:#fff; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; color:#000; }
 h2 { font-size: 28px; }
 h3 { font-size: 24px; }
 h4 { font-size: 20px; }
 h5 { font-size: 18px; }
 h6 { font-size: 16px; }	
 p { margin: 20px 0; }
-.lead { font-size: 28px; color: #fff; padding: 0 0 20px;}
+.lead { font-size: 28px; color: #000; padding: 0 0 20px;}
 
 .content h1, h1  {
 	margin: 0 auto;
 	text-align: center;
-	color: #fff;
+	color: #000;
     letter-spacing: -1px;
 	font-size: 95px;
 	line-height: 1em;
@@ -142,7 +142,7 @@ p { margin: 20px 0; }
 .soon{
 	margin: 0px auto;
 	text-align: center;
-	color: #fff;
+	color: #000;
 	letter-spacing: 6px;
 	font-size: 14px;
 	font-weight: 700;
@@ -185,7 +185,7 @@ p { margin: 20px 0; }
 	right: 0;
 	padding-top:100px;
 	color: darkcyan!important;
-	background-color: #303030;
+	background-color: #f6f6f6;
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -o-pre-wrap;
@@ -202,7 +202,7 @@ p { margin: 20px 0; }
 	-webkit-transition-delay: 2s;
 	transition-delay: 0;
 }
-.bgterminal .cursor { background: #ffffff; }
+.bgterminal .cursor { background: #000; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	02: INTRO PAGE
@@ -220,7 +220,7 @@ p { margin: 20px 0; }
 	letter-spacing: 4px;
 	padding: 10px;
 	margin: 20px 5px;
-	color: #fff;
+	color: #000;
 	font-weight: 700;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
@@ -233,7 +233,7 @@ p { margin: 20px 0; }
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: #fff;
+	background: #000;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -255,7 +255,7 @@ p { margin: 20px 0; }
 	-moz-transform: translateY(10px);
 	transform: translateY(10px);
 }
-.link-effect a:hover, .link-effect a:focus { color: #fff; }
+.link-effect a:hover, .link-effect a:focus { color: #000; }
 .link-effect a:hover::before, .link-effect a:focus::before, .link-effect a:hover::after, .link-effect a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
@@ -293,7 +293,7 @@ p { margin: 20px 0; }
 ::-webkit-input-placeholder { color: #f0f0f0; opacity: 1.0; }
 :-moz-placeholder { color: #f0f0f0; opacity:1.0; }
 ::-moz-placeholder { color: #f0f0f0; opacity:1.0; }
-:-ms-input-placeholder { color: #fff; opacity:1.0; }
+:-ms-input-placeholder { color: #000; opacity:1.0; }
 focus::-webkit-input-placeholder { color: transparent; opacity: 1.0;}
 #ajax-contact-form input:focus { color: #f0f0f0; outline: none; }
 input { outline: none; }
@@ -303,13 +303,13 @@ input { outline: none; }
 	display: inline-block;
 	margin: 15px auto;
 	padding: 25px 60px;
-	color: #fff;
+	color: #000;
 	font-size: inherit;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
 	background: none;
-	border: 2px solid #fff;
+	border: 2px solid #000;
 	-webkit-box-border-radius: 0px;
 	-moz-box-border-radius: 0px;
 	border-radius: 0px;
@@ -320,10 +320,10 @@ input { outline: none; }
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.btn:hover, .btn:active { color: #fff; background:rgba(255,255,255,.15); }
+.btn:hover, .btn:active { color: #000; background:rgba(255,255,255,.15); }
 
 .notification_ok {
-    color: #fff;
+    color: #000;
 	opacity: 0.5;
 	font-weight: 400;
     height: auto;
@@ -351,12 +351,12 @@ input { outline: none; }
     display: inline-block!important;
     text-align: center;
 }
-.number { font-size: 50px; line-height: 15px; color: #fff; font-weight: 700; }
+.number { font-size: 50px; line-height: 15px; color: #000; font-weight: 700; }
 .time {
 	font-size: 13px;
     margin-top: 5px;
 	text-transform: uppercase;
-    color: #fff;
+    color: #000;
 	width: 110px;
 	display: block;
 	background: transparent;
@@ -366,7 +366,7 @@ input { outline: none; }
 #social-icons ul { padding: 0; list-style-type: none; margin: 40px auto 0; }
 #social-icons ul li { display: inline; }
 #social-icons ul li a {
-	color: #fff;
+	color: #000;
 	font-size: 30px;
 	margin: 0px 8px;
 	line-height: 40px;
@@ -380,7 +380,7 @@ input { outline: none; }
 #overlay { 
 	display: none;
 	background:rgba(24, 37, 52, 1.0) ;
-	color: #fff;
+	color: #000;
     position: fixed!important;
 	overflow-y: scroll!important;
 	width: 100%;
@@ -416,7 +416,7 @@ input { outline: none; }
 	position: absolute;
 	left: 50%; top: 45%;
 	margin: -25px 0 0 -25px;
-	color: #fff;
+	color: #000;
 }
 .status2 {
 	width: 100px; height:36px;
@@ -553,7 +553,7 @@ input { outline: none; }
 }
 
 .rw-sentence span{
-  color: white;
+  color: #000;
   font-size: 22px;
   font-weight: normal;
 }
@@ -678,7 +678,7 @@ input { outline: none; }
 }
 
 .title{
-  color: #fff;
+  color: #000;
   margin: 0 0 20px 0;
   position: relative;
   font-weight: 700;
@@ -695,7 +695,7 @@ input { outline: none; }
 }
 
 h1.title {
-    color: #ffc;
+    color: #000;
     padding-top: 7.5px;
     font-size: 1.667em;
 }
@@ -782,7 +782,7 @@ ul#filter li {
 
 ul#filter a { color: #999; text-decoration: none; }
 ul#filter li.current a, ul#filter a:hover { text-decoration: none; }
-ul#filter li.current a { color: #ffc; font-weight: bold; }
+ul#filter li.current a { color: #000; font-weight: bold; }
 
 ul#portfolio {display:block; list-style: none; margin-left: 0; width: 100%; text-align:center;}
 
@@ -803,7 +803,7 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
     height: 210px;
 
     float: left;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     overflow: hidden;
     position: relative;
     text-align: center;
