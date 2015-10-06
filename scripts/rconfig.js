@@ -21,7 +21,7 @@ var require={
     'ngFooter':'directives/ngFooter',
     'plugins':'lib/plugins',
     'custom':'lib/custom',
-    'skillCtrl':'controllers/skillController',
+    'profileCtrl':'controllers/profileController',
     'projectCtrl':'controllers/projectController',
     'raphael':'lib/raphael',
     'init':'lib/init',
@@ -37,7 +37,7 @@ var require={
     'angular-animate':{ deps: ['angular']},
     'aboutCtrl': { deps: ['angular','angular-animate']},
     'homeCtrl': { deps: ['angular','angular-animate']},
-    'skillCtrl': { deps: ['angular','angular-animate']},
+    'profileCtrl': { deps: ['angular','angular-animate']},
     'projectCtrl': { deps: ['angular','angular-animate']},
     'custom':{ deps: ['jquery','plugins']},
 /*    'bootstrap': { deps: ['jquery']},*/

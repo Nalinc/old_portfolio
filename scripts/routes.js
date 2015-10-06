@@ -16,10 +16,10 @@ define([], function()
 //                    'directives/app-color'
                 ]
             },
-            '/skills': {
-                templateUrl: '/views/skills.html',
+            '/profile': {
+                templateUrl: '/views/profile.html',
                 dependencies: [
-                    'controllers/skillController'
+                    'controllers/profileController'
                 ]
             },
             '/projects': {
