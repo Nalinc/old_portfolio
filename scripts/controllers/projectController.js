@@ -6,23 +6,9 @@ define(['app'], function(app){
 	app.controller('projectController', function($scope){
 
 
-/*			$("#filter-port").isotope({filter: "*"});
-
-			$("#filter-nav").find("a").on("click touchstart", function(e) {
-				var $t = $(this),
-					selector = $t.data("filter");
-				// Don't proceed if already selected
-				if($t.parent().hasClass("filter-current"))
-					return false;
-
-				$("#filter-nav").find(".filter-current").removeClass("filter-current");
-				$t.parent().addClass("filter-current");
-				$("#filter-port").isotope({filter: selector});
-
-				e.stopPropagation();
-				e.preventDefault(); 
-			});	*/		
-
+		$scope.open=function(){
+			alert()
+		}
 
 		$('ul#filter a').click(function() {
 			    $(this).css('outline','none');

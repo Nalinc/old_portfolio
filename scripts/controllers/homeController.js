@@ -5,7 +5,6 @@ define(['app'], function(app){
 	app.controller('homeController', function($scope,$rootScope){
 
 			$rootScope.showLoader= false;
-
 	});
 
 });

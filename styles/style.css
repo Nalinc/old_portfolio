@@ -41,6 +41,7 @@ a, li { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 .wow { visibility: hidden; }
 img { display:block; height:auto; max-width:100%; vertical-align:top; ms-interpolation-mode:bicubic; opacity:1.0; width: auto\9;}
 
+
 /**** LINKS ****/
 a {
 	-webkit-transition: all 0.3s ease-in-out;
@@ -407,12 +408,20 @@ input { outline: none; }
 /*-----------------------------------------------------------------------------------*/
 /*	06:PRELOADER
 /*-----------------------------------------------------------------------------------*/
-#preloader {
+#loader {
 	position: fixed;
 	top: 0; left: 0; right: 0; bottom: 0;
-	background-color: #303030 !important;
+	background-color: rgba(0,0,0,0.4) !important;
 	z-index: 9999;
 }
+
+#apploader{
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:9;
+}
+
 .status1 {
 	width: 50px; height:50px;
 	position: absolute;
@@ -424,7 +433,7 @@ input { outline: none; }
 	width: 100px; height:36px;
 	position: absolute;
 	left: 50%; top: 50%;
-	margin: -18px 0 0 -50px;
+	margin: 12px 0 0 -50px;
   font-weight: bold;
 }
 

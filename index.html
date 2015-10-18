@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     
     <!--FONTS-->    
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata" type="text/css" />
+<!--     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata" type="text/css" /> -->
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/animate.css" />
@@ -31,8 +31,8 @@
     <ng-header></ng-header>
 
 <!--PRELOADER-->
-    <div id="preloader">
-        <div id="status">
+    <div id="loader" ng-show="showLoader">
+        <div id="apploader">
             <div class="status1"><i class="fa fa-clock-o fa-2x fa-spin"></i></div>
             <div class="status2">Just a sec</div>
         </div>
@@ -53,18 +53,6 @@
 
 
 
-    <script>
-    //<![CDATA[
-        $(document).ready(function(){
-            $('#terminal').bgTerminal({
-                url: 'index.html',
-                glow: false,
-                speed: 100,
-                wait: 1000
-            });
-        });
-        //]]>
-    </script>
 
 </body>
 
