@@ -26,107 +26,22 @@
           </ul>
 
           <ul id="portfolio" class="row">
-            <li class="information-retrieval">
+            <li ng-repeat="project in projects" ng-class="project.classes">
                 <a href="#/lab">
-                <div class="box"> <img src="images/lab/wrn.png">
+                <div class="box"> <img ng-src={{project.img.small}}>
                   <div class="overbox">
-                    <div class="title overtext"> Weather Report Notifier </div>
-                    <div class="tagline overtext" ng-click='open()'> See Details </div>
+                    <div class="title overtext"> {{project.name}} </div>
+                    <div class="tagline overtext" ng-click='openModal()'> See Details </div>
                   </div>
                 </div>
                 </a>
             </li>
-            <li class="casual">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/ce.jpg">
-                  <div class="overbox">
-                    <div class="title overtext"> Codeasy </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="casual">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/44s.png">
-                  <div class="overbox">
-                    <div class="title overtext"> connect four</div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="casual design">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/chatjs.png">
-                  <div class="overbox">
-                    <div class="title overtext"> chat.js </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="professional">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/fossee.png">
-                  <div class="overbox">
-                    <div class="title overtext"> FOSSEE </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="professional design">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/chaoscrypto.png">
-                  <div class="overbox">
-                    <div class="title overtext"> Multi-Chaotic Cryptosystem </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="design">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/geneticrypt.png">
-                  <div class="overbox">
-                    <div class="title overtext"> Genetic Cryptanalysis </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="information-retrieval professional">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/cern-logo.jpg">
-                  <div class="overbox">
-                    <div class="title overtext"> CDS Metadata Upgradation </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-            <li class="casual design">
-                <a href="#/lab">
-                <div class="box"> <img src="images/lab/aco.png">
-                  <div class="overbox">
-                    <div class="title overtext"> ACO Simulation </div>
-                    <div class="tagline overtext"> See Details </div>
-                  </div>
-                </div>
-                </a>
-            </li>
-
-
-
-
-
-
-
-
-                      </ul>
+          </ul>
         </div>
 
 
 			</div> <!-- End Portfolio Page -->
+      <modal-dialog show='modalShown' width='80%' height='80%'>
+      </modal-dialog>
 </secton>
+

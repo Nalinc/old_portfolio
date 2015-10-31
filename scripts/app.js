@@ -56,8 +56,73 @@ define(['angular-animate','wow'], function()
         
     });
     app.controller('labController', function($scope){
-        $scope.open=function(){
-            alert()
+        $scope.modalShown = false;
+        $scope.projects=[{
+                            name:'weather report notifier',
+                            img:{
+                                small:'images/lab/wrn.png',
+                                large:''
+                            },
+                            classes:'information-retrieval'
+                        },{
+                            name:'codeasy',
+                            img:{
+                                small:'images/lab/ce.jpg',
+                                large:''
+                            },
+                            classes:'casual'
+                        },{
+                            name:'connect four',
+                            img:{
+                                small:'images/lab/44s.png',
+                                large:''
+                            },
+                            classes:'casual'
+                        },{
+                            name:'chat.js',
+                            img:{
+                                small:'images/lab/chatjs.png',
+                                large:''
+                            },
+                            classes:'casual design'
+                        },{
+                            name:'FOSSEE',
+                            img:{
+                                small:'images/lab/fossee.png',
+                                large:''
+                            },
+                            classes:'professional'
+                        },{
+                            name:'Multi-Chaotic Cryptosystem',
+                            img:{
+                                small:'images/lab/chaoscrypto.png',
+                                large:''
+                            },
+                            classes:'professional design'
+                        },{
+                            name:'Genetic Cryptanalysis',
+                            img:{
+                                small:'images/lab/geneticrypt.png',
+                                large:''
+                            },
+                            classes:'design'
+                        },{
+                            name:'CDS Metadata Upgradation',
+                            img:{
+                                small:'images/lab/cern-logo.jpg',
+                                large:''
+                            },
+                            classes:'information-retrieval professional'
+                        },{
+                            name:'ACO Simulation',
+                            img:{
+                                small:'images/lab/aco.png',
+                                large:''
+                            },
+                            classes:'casual design'
+                        }]
+        $scope.openModal=function(){
+            $scope.modalShown = !$scope.modalShown;
         }
         $('ul#filter a').click(function() {
                 $(this).css('outline','none');
@@ -105,6 +170,27 @@ define(['angular-animate','wow'], function()
                 });         
             }
         };
+    });
+    app.directive('modalDialog', function() {
+      return {
+        restrict: 'E',
+        scope: {
+          show: '='
+        },
+        replace: true, // Replace with the template below
+        transclude: true, // we want to insert custom content inside the directive
+        link: function(scope, element, attrs) {
+          scope.dialogStyle = {};
+          if (attrs.width)
+            scope.dialogStyle.width = attrs.width;
+          if (attrs.height)
+            scope.dialogStyle.height = attrs.height;
+          scope.hideModal = function() {
+            scope.show = false;
+          };
+        },
+        templateUrl: "views/modal.html"
+      };
     });
 
    return app;
