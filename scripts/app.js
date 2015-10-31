@@ -39,6 +39,15 @@ define(['angular-animate','wow'], function()
             $rootScope.showLoader= false;
             wow = new WOW({animateClass: 'animated', mobile: true});
             wow.init();
+/*            $("#img-thumbnail").on("mouseenter", function(){
+                $("#img-thumbnail > #img-ripple").removeClass("ripple");
+                $("#img-thumbnail > #img-ripple > img").css({'margin-left':'50px','border-radius':'5px'});
+                $("#img-thumbnail > #img-overlay").css({'display':'block'});
+            }).on("mouseleave", function(){
+                $("#img-thumbnail > #img-ripple").addClass("ripple");
+                $("#img-thumbnail > #img-ripple > img").css({'margin-left':'auto','border-radius':'50%'});
+                $("#img-thumbnail > #img-overlay").css({'display':'none'});
+            });*/
     });
     app.controller("aboutController",function($scope,$rootScope){
             $(".subtitle").scrambledWriter();
