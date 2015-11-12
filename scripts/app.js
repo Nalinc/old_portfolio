@@ -55,7 +55,7 @@ define(['angular-animate','wow'], function()
     app.controller("profileController",function($scope){
         
     });
-    app.controller('labController', function($scope){
+    app.controller('labController', function($scope, $rootScope){
         $scope.modalShown = false;
         $scope.projects=[{
                             name:'weather report notifier',
@@ -72,9 +72,9 @@ define(['angular-animate','wow'], function()
                             },
                             classes:'casual'
                         },{
-                            name:'connect four',
+                            name:'XnOs',
                             img:{
-                                small:'images/lab/44s.png',
+                                small:'images/lab/XnOs.png',
                                 large:''
                             },
                             classes:'casual'
@@ -109,7 +109,7 @@ define(['angular-animate','wow'], function()
                         },{
                             name:'CDS Metadata Upgradation',
                             img:{
-                                small:'images/lab/cern-logo.jpg',
+                                small:'images/lab/cds.png',
                                 large:''
                             },
                             classes:'information-retrieval professional'
@@ -120,8 +120,11 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             classes:'casual design'
-                        }]
-        $scope.openModal=function(){
+                        }];
+        $rootScope.currentProject=$scope.projects[0];
+        $scope.openModal=function(obj){
+            $rootScope.currentProject=obj;
+            console.log($rootScope.currentProject)
             $scope.modalShown = !$scope.modalShown;
         }
         $('ul#filter a').click(function() {
@@ -175,7 +178,8 @@ define(['angular-animate','wow'], function()
       return {
         restrict: 'E',
         scope: {
-          show: '='
+          show: '=',
+          project: '='
         },
         replace: true, // Replace with the template below
         transclude: true, // we want to insert custom content inside the directive
