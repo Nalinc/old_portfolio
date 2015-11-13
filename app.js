@@ -4,8 +4,6 @@ var app = express();
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname))
 
-app.use('/node_modules',  express.static(__dirname + '/node_modules'));
-
 app.get('/', function(request, response) {
   response.render('index.html')
 })

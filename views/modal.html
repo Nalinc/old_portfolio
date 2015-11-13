@@ -4,18 +4,26 @@
   </div>
   <div class='ng-modal-dialog' ng-style='dialogStyle'>
     <div class='ng-modal-close' ng-click='hideModal()'>X</div>
-    <div class='ng-modal-dialog-content' style="overflow-y:auto;height:100%;width:100%">
-    	<div class="row" style="margin-top:30px;width:100%;height:80%">
+    <div class='ng-modal-dialog-content' style="">
+    	<div class="row" id="modal-content">
     		<div class="col-xs-12 col-md-8">
-    			<img ng-src={{project.img.small}} style="width:100%;height:470px">
+<!--     			<img ng-src={{project.img.small}} class="img  img-responsive"> -->
+          <div class="thumb">
+            <!-- Image -->
+            <a  id="project-image">
+              <!-- Label -->
+              <span>{{project.name}}</span>
+            </a>
+          </div>
+
     		</div>
     		<div class="col-xs-12 col-md-4">
 	    		<div class="row">
 	    			<div class="col-xs-12"  style="text-align:left">
-	    				<b>project name</b>
+	    				<b>{{project.name}}</b>
 	    			</div>	
-	    			<div class="col-xs-12" style="text-align:justify" >
-	    				<p>project namesdsddsdqwewijeewiofjdf sddfjsdjfdsies fdsdfhds fsdfsdfsdsf sdfhdsjhs sdfhds</p>
+	    			<div class="col-xs-12 project-description" style="text-align:justify" >
+	    				<p>{{project.description}}</p>
 	    			</div>	
 
 	    		</div>

@@ -63,6 +63,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/wrn.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'information-retrieval'
                         },{
                             name:'codeasy',
@@ -70,6 +71,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/ce.jpg',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'casual'
                         },{
                             name:'XnOs',
@@ -77,6 +79,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/XnOs.png',
                                 large:''
                             },
+                            description:'XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.',
                             classes:'casual'
                         },{
                             name:'chat.js',
@@ -84,6 +87,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/chatjs.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'casual design'
                         },{
                             name:'FOSSEE',
@@ -91,6 +95,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/fossee.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'professional'
                         },{
                             name:'Multi-Chaotic Cryptosystem',
@@ -98,6 +103,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/chaoscrypto.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'professional design'
                         },{
                             name:'Genetic Cryptanalysis',
@@ -105,6 +111,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/geneticrypt.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'design'
                         },{
                             name:'CDS Metadata Upgradation',
@@ -112,6 +119,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/cds.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'information-retrieval professional'
                         },{
                             name:'ACO Simulation',
@@ -119,11 +127,14 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/aco.png',
                                 large:''
                             },
+                            description:'a quick brown fox jumped over the lazy log',
                             classes:'casual design'
                         }];
         $rootScope.currentProject=$scope.projects[0];
         $scope.openModal=function(obj){
             $rootScope.currentProject=obj;
+            var property ='linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('+obj.img.small+')'
+            $('.thumb a').css({'background':property,'background-size': '0, cover'})
             console.log($rootScope.currentProject)
             $scope.modalShown = !$scope.modalShown;
         }

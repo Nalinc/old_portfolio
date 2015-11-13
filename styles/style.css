@@ -1,18 +1,3 @@
-/*
-Theme Name: SPARX - CODE - Version: 1.01
-Description:  Designed by josweb.
-Author:  Jo
-Purchase:  http://themeforest.net/user/josweb
-
-01. GENERAL STYLING
-02. INTRO PAGE
-03. SUBSCRIBE PAGE
-04. COUNTDOWN PAGE
-05: ABOUT PAGE
-06. PRELOADER
-07: MEDIA QUERIES
-*/
-
 /*-----------------------------------------------------------------------------------*/
 /*	01: GENERAL STYLING
 /*-----------------------------------------------------------------------------------*/	
@@ -691,7 +676,7 @@ input { outline: none; }
 
 #img-thumbnail {
 	display: block;
-  	margin: 100px auto;
+  	margin: 50px auto;
   	text-align:center;
 	width: 90%;
 	height: 150px;
@@ -887,11 +872,20 @@ ul#filter li {
   line-height: 16px;
   margin: 0 auto;
   padding: 5px;
+  color: crimson; 
 }
 
-ul#filter a { color: #999; text-decoration: none; }
+ul#filter li:hover { 
+	border:1px solid #000;
+	color:#000;
+}
+
+ul#filter li.current{
+	border:2px solid #000;
+}
+ul#filter a { color:inherit;text-decoration: none; }
 ul#filter li.current a, ul#filter a:hover { text-decoration: none; }
-ul#filter li.current a { color: #000; font-weight: bold; }
+ul#filter li.current a { color: #000; font-weight: bold;}
 
 ul#portfolio {display:block; list-style: none; margin-left: 0; width: 100%; text-align:center;}
 
@@ -902,6 +896,7 @@ ul#portfolio li {
   width:30%;
   float:left;
 }
+
 
 ul#portfolio a { display: block; width: 100%; }
 ul#portfolio a:hover { text-decoration: none; }
@@ -939,7 +934,94 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
 .ng-modal-dialog-content {
   padding:10px;
   text-align: left;
+  overflow: hidden;
+  height:100%;
+  width:100%
 }
+.ng-modal-dialog-content > .row{
+	margin: 30px 0 0 0;
+	width:100%;
+	height:90%;
+}
+#modal-content .img{
+	width:100%;
+	height:100%;
+}
+.project-description{
+	overflow-y:auto;
+}
+
+/*--------*/
+
+
+/*Thumbnail Background*/
+.thumb {
+	width: 100%; height: 400px; margin: 30px auto;
+	perspective: 1000px;
+    padding: 10px;
+}
+.thumb a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	border: 1px solid black;
+	cursor: crosshair;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+	transform: rotateX(80deg); transform-origin: bottom
+}
+.thumb:hover a {transform: rotateX(0deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 1;
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+
+}
+.thumb:hover a:before {
+	opacity: 0.15;
+
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+
+  
+}
+
+
+/*--------*/
+
 .ng-modal-close {
   position: absolute;
   top: 3px;
