@@ -872,7 +872,7 @@ ul#filter li {
   line-height: 16px;
   margin: 0 auto;
   padding: 5px;
-  color: crimson; 
+  color: darkcyan; 
 }
 
 ul#filter li:hover { 
@@ -947,16 +947,28 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
 	width:100%;
 	height:100%;
 }
-.project-description{
-	overflow-y:auto;
+#modal-content .left-panal, #modal-content .left-panal .row,#modal-content .left-panal .row .project-description {
+	height:100%;
 }
-
+.project-description{
+	overflow: hidden;
+    position: relative;
+}
+.project-description p{
+	width: 100%;
+    padding-right: 20px;
+    overflow: auto;
+    height: 100%;
+    position: absolute;
+}
 /*--------*/
 
 
 /*Thumbnail Background*/
 .thumb {
 	width: 100%; height: 400px; margin: 30px auto;
+	-webkit-perspective: 2000px;
+	-moz-perspective: 1000px;
 	perspective: 1000px;
     padding: 10px;
 }
@@ -968,11 +980,21 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
 	border: 1px solid black;
 	cursor: crosshair;
 	/*3d space for children*/
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 	transition: all 0.5s;
-	transform: rotateX(80deg); transform-origin: bottom
+	-webkit-transform: rotateX(80deg); -moz-transform-origin: bottom;
+	-moz-transform: rotateX(80deg); -moz-transform-origin: bottom;
+	transform: rotateX(80deg); transform-origin: bottom;
 }
-.thumb:hover a {transform: rotateX(0deg); transform-origin: bottom;}
+.thumb:hover a {
+	-webkit-transform: rotateX(0deg); -webkit-transform-origin: bottom;
+	-moz-transform: rotateX(0deg); -moz-transform-origin: bottom;
+	transform: rotateX(0deg); transform-origin: bottom;
+}
 /*bottom surface */
 .thumb a:after {
 	/*36px high element positioned at the bottom of the image*/
@@ -983,15 +1005,20 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
 	/*draw the BG bottom up*/
 	background-position: bottom;
 	/*rotate the surface 90deg on the bottom axis*/
+	-webkit-transform: rotateX(90deg); -webkit-transform-origin: bottom;
+	-moz-transform: rotateX(90deg); -moz-transform-origin: bottom;
 	transform: rotateX(90deg); transform-origin: bottom;
 }
 /*label style*/
 .thumb a span {
-	color: white; text-transform: uppercase;
+	color: white;
 	position: absolute; top: 100%; left: 0; width: 100%;
 	font: bold 12px/36px Montserrat; text-align: center;
+	background-color: rgba(0,0,0,0.4);
 	/*the rotation is a bit less than the bottom surface to avoid flickering*/
-	transform: rotateX(-89.99deg); transform-origin: top;
+	-webkit-transform: rotateX(-86.99deg); -webkit-transform-origin: top;
+	-moz-transform: rotateX(-86.99deg); -moz-transform-origin: top;
+	transform: rotateX(-86.99deg); transform-origin: top;
 	z-index: 1;
 }
 /*shadow*/
@@ -1003,6 +1030,8 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
 	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
 	opacity: 1;
 	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	-webkit-transform: rotateX(0) translateZ(-60px) scale(0.85);
+	-moz-transform: rotateX(0) translateZ(-60px) scale(0.85);
 	transform: rotateX(0) translateZ(-60px) scale(0.85);
 
 }
@@ -1013,10 +1042,12 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
 	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
 
 	/*pushing the shadow down and scaling it down to size*/
+	-webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	-moz-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
 	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
 	transform-origin: bottom;
-
-  
 }
 
 

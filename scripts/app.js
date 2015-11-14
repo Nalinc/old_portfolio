@@ -79,7 +79,7 @@ define(['angular-animate','wow'], function()
                                 small:'images/lab/XnOs.png',
                                 large:''
                             },
-                            description:'XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.',
+                            description:'XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.',
                             classes:'casual'
                         },{
                             name:'chat.js',
@@ -133,8 +133,12 @@ define(['angular-animate','wow'], function()
         $rootScope.currentProject=$scope.projects[0];
         $scope.openModal=function(obj){
             $rootScope.currentProject=obj;
-            var property ='linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('+obj.img.small+')'
-            $('.thumb a').css({'background':property,'background-size': '0, cover'})
+            var property ='linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';
+            var webkit_property ='-webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';
+            var moz_property ='-moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';                
+            $('.thumb a').css({'background':webkit_property,'-webkit-background-size': '0, cover'});
+            $('.thumb a').css({'background':moz_property,'-moz-background-size': '0, cover'});
+            $('.thumb a').css({'background':property,'background-size': '0, cover'});
             console.log($rootScope.currentProject)
             $scope.modalShown = !$scope.modalShown;
         }
