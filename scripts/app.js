@@ -150,7 +150,7 @@ define(['angular-animate','wow'], function()
                         }];
         $rootScope.currentProject=$scope.projects[0];
         $scope.openModal=function(obj){
-//            $('.view-animate-container').css({'overflow-y':'hidden'});
+            $('.view-animate-container').css({'overflow-y':'hidden'});
             $rootScope.currentProject=obj;
             var property ='linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';
             var webkit_property ='-webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';
@@ -225,7 +225,7 @@ define(['angular-animate','wow'], function()
             scope.dialogStyle.height = attrs.height;
           scope.hideModal = function() {
             scope.show = false;
-          //  $('.view-animate-container').css({'overflow-y':'auto'})
+            $('.view-animate-container').css({'overflow-y':'auto'})
           };
         },
         templateUrl: "views/modal.html"
