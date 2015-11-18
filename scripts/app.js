@@ -64,7 +64,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'information-retrieval'
+                            classes:'information-retrieval',
                             technologies:'JAVA, information-retrieval, JavaMail',
                             platform:'web 2.0'
                         },{
@@ -74,7 +74,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'casual'
+                            classes:'casual',
                             technologies:'c++, ncurses',
                             platform:'debian/linux'
                         },{
@@ -94,7 +94,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'casual design'
+                            classes:'casual design',
                             technologies:'c++, ncurses',
                             platform:'debian/linux'
                         },{
@@ -104,7 +104,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'professional'
+                            classes:'professional',
                             technologies:'c++, ncurses',
                             platform:'debian/linux'
                         },{
@@ -114,7 +114,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'professional design'
+                            classes:'professional design',
                             technologies:'c++, ncurses',
                             platform:'debian/linux'
                         },{
@@ -124,7 +124,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'design'
+                            classes:'design',
                             technologies:'c++, ncurses',
                             platform:'debian/linux'
                         },{
@@ -134,7 +134,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'information-retrieval professional'
+                            classes:'information-retrieval professional',
                             technologies:'python, ',
                             platform:'web'
                         },{
@@ -144,7 +144,7 @@ define(['angular-animate','wow'], function()
                                 large:''
                             },
                             description:'a quick brown fox jumped over the lazy log',
-                            classes:'casual design'
+                            classes:'casual design',
                             technologies:'JAVA, Swing, JApplet',
                             platform:'cross-platform'
                         }];
