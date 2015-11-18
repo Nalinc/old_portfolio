@@ -65,6 +65,8 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'information-retrieval'
+                            technologies:'JAVA, information-retrieval, JavaMail',
+                            platform:'web 2.0'
                         },{
                             name:'codeasy',
                             img:{
@@ -73,14 +75,18 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'casual'
+                            technologies:'c++, ncurses',
+                            platform:'debian/linux'
                         },{
                             name:'XnOs',
                             img:{
                                 small:'images/lab/XnOs.png',
                                 large:''
                             },
-                            description:'XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a stone/symbol of their color on an m×n board, the winner being the player who first gets k stones of their own color/symbol in a row, horizontally, vertically, or diagonally. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.',
-                            classes:'casual'
+                            description:'XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a symbol of their color on an m×n board, the winner being the player who first gets k symbols of their own type in a row. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.',
+                            classes:'casual',
+                            technologies:'c++, ncurses',
+                            platform:'debian/linux'
                         },{
                             name:'chat.js',
                             img:{
@@ -89,6 +95,8 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'casual design'
+                            technologies:'c++, ncurses',
+                            platform:'debian/linux'
                         },{
                             name:'FOSSEE',
                             img:{
@@ -97,6 +105,8 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'professional'
+                            technologies:'c++, ncurses',
+                            platform:'debian/linux'
                         },{
                             name:'Multi-Chaotic Cryptosystem',
                             img:{
@@ -105,6 +115,8 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'professional design'
+                            technologies:'c++, ncurses',
+                            platform:'debian/linux'
                         },{
                             name:'Genetic Cryptanalysis',
                             img:{
@@ -113,6 +125,8 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'design'
+                            technologies:'c++, ncurses',
+                            platform:'debian/linux'
                         },{
                             name:'CDS Metadata Upgradation',
                             img:{
@@ -121,6 +135,8 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'information-retrieval professional'
+                            technologies:'python, ',
+                            platform:'web'
                         },{
                             name:'ACO Simulation',
                             img:{
@@ -129,9 +145,12 @@ define(['angular-animate','wow'], function()
                             },
                             description:'a quick brown fox jumped over the lazy log',
                             classes:'casual design'
+                            technologies:'JAVA, Swing, JApplet',
+                            platform:'cross-platform'
                         }];
         $rootScope.currentProject=$scope.projects[0];
         $scope.openModal=function(obj){
+//            $('.view-animate-container').css({'overflow-y':'hidden'});
             $rootScope.currentProject=obj;
             var property ='linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';
             var webkit_property ='-webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+obj.img.small+')';
@@ -206,6 +225,7 @@ define(['angular-animate','wow'], function()
             scope.dialogStyle.height = attrs.height;
           scope.hideModal = function() {
             scope.show = false;
+          //  $('.view-animate-container').css({'overflow-y':'auto'})
           };
         },
         templateUrl: "views/modal.html"
