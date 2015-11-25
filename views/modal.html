@@ -23,9 +23,20 @@
 	    				<b>{{project.name}}</b>
 	    			</div>	
 	    			<div class="col-xs-12 project-description" style="text-align:justify" >
-	    				<p>{{project.description}}</p>
-	    			</div>	
+              <div class="project-meta">
+                  <div><b><a href='javascript:void(0)'>Demo</a></b></div>
+                  <div><b>Platform:</b> {{project.platform}}</div> 
+                  <div><b>Technologies:</b> {{project.technologies}}</div>
+                  <div><b>Screenshots:</b></div>
+                  <span ng-repeat='item in project.screenshots'>
+                     <img ng-src="{{item}}" class="project-screenshots" ng-click='changeImage(item)'> 
+                  </span>                
+              </div>
+	    				<p>
+                {{project.description}}
 
+              </p>
+	    			</div>	
 	    		</div>
     		</div>
 

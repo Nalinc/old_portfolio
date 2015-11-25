@@ -1,0 +1,147 @@
+[{
+    "name":"tweebbles",
+    "img":{
+        "small":"images/lab/tweebbles/tweebbles.png",
+        "large":""
+    },
+    "description":"A data centric view of user tweets",
+    "classes":"information-retrieval, design",
+    "technologies":"node.js, information-retrieval, twitter-api, data-visualization",
+    "platform":"web",
+    "screenshots":[
+        "images/lab/tweebbles/tweebbles.png",
+        "images/lab/tweebbles/tweebbles_cloud.png",
+        "images/lab/tweebbles/tweebbles_sentiment.png",
+        "images/lab/tweebbles/tweebbles_negative.png",
+        "images/lab/tweebbles/tweebbles_neutral.png",
+        "images/lab/tweebbles/tweebbles_positive.png"
+    ]
+},{
+    "name":"chat.js",
+    "img":{
+        "small":"images/lab/chatjs.png",
+        "large":""
+    },
+    "description":"Simple chat plugin for web-apps with amazing plug-n-play features",
+    "classes":"casual design",
+    "technologies":"javascript, css3, html5",
+    "platform":"web",
+    "screenshots":[
+        "images/lab/chatjs.png"
+    ]
+},{
+    "name":"Genetic Cryptanalysis",
+    "img":{
+        "small":"images/lab/geneticrypt/geneticrypt.png",
+        "large":""
+    },
+    "description":"Part of major thesis. Used principles of genetic algorithm and simulated annealing to perform cryptanalysis of 32 Bit Affine cipher. Employed 'elitist selection' with 'one-point crossover' for constructing the new chromosomal population. The focus was to get performance gains by replacing classical brute-force techniques with new heuristics and compare individual results from genetic algorithm/simulated annealing.",
+    "classes":"design",
+    "technologies":"c++, Qt4",
+    "platform":"debian/linux",
+    "screenshots":[
+        "images/lab/geneticrypt/geneticrypt.png",
+        "images/lab/geneticrypt/affine.png",
+        "images/lab/geneticrypt/genetic.png",
+        "images/lab/geneticrypt/plot.png",
+        "images/lab/geneticrypt/simulated.png"
+    ]
+},{
+    "name":"Multi-Chaotic Cryptosystem",
+    "img":{
+        "small":"images/lab/chaoscrypto/chaoscrypto.png",
+        "large":""
+    },
+    "description":"Used ordinary differential equations from three dynamical systems exhibiting chaotic behavior, to describe the time dependence of a point in a geometrical space with specified mathematical rules/equations. The systems used were were 'Lorenz Attractor', 'Rabinovich Fabrikant Equations' and 'Rossler Attractor' to generate 'continuous' shuffling sequences.",
+    "classes":"professional design",
+    "technologies":"c++, Qt4",
+    "platform":"debian/linux",
+    "screenshots":[
+        "images/lab/chaoscrypto/chaoscrypto.png",
+        "images/lab/chaoscrypto/encrypt.png",
+        "images/lab/chaoscrypto/decrypt.png",
+        "images/lab/chaoscrypto/sync.png",
+        "images/lab/chaoscrypto/plot_rossler.png",
+        "images/lab/chaoscrypto/plot_RabinoFabrik.png"
+    ]
+},{
+    "name":"CDS Metadata Upgradation",
+    "img":{
+        "small":"images/lab/cds.png",
+        "large":""
+    },
+    "description":"Used semi-supervised machine learning to enrich the metadata with data from other sources and integrate changes in invenio. Major tasks include data acquisition involving disambiguation(within incoming data), removing multiple instances, handling replications in new/existing records and tweaking invenio codebase.",
+    "classes":"information-retrieval professional",
+    "technologies":"python, information-retrieval, machine-learning",
+    "platform":"web",
+    "screenshots":[
+        "images/lab/cds.png"
+    ]
+},{
+    "name":"weather report notifier",
+    "img":{
+        "small":"images/lab/wrn.png",
+        "large":""
+    },
+    "description":"A web application, build on J2EE platform and PostgreSQL as backend. Web-app developed to catch SMSs with specific format sent on my number, retrieve weather information (temperature/cloud coverage/humidity/wind speed) and respond back as corresponding to the city/location mentioned in message.",
+    "classes":"information-retrieval",
+    "technologies":"JAVA, information-retrieval, JavaMail",
+    "platform":"web",
+    "screenshots":[
+        "images/lab/wrn.png"
+    ]
+},{
+    "name":"codeasy",
+    "img":{
+        "small":"images/lab/ce.jpg",
+        "large":""
+    },
+    "description":"An Integrated Development Environment (IDE) for JAVA, build using swings for GUI and written in JAVA. Tab based interface with syntax highlighting. Plans to integrate an intellisense feature in next patch.",
+    "classes":"casual",
+    "technologies":"Java, swings",
+    "platform":"cross-platform",
+    "screenshots":[
+        "images/lab/ce.jpg"
+    ]
+},{
+    "name":"XnOs",
+    "img":{
+        "small":"images/lab/XnOs/XnOs.png",
+        "large":""
+    },
+    "description":"XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a symbol of their color on an m×n board, the winner being the player who first gets k symbols of their own type in a row. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.",
+    "classes":"casual",
+    "technologies":"c++, ncurses",
+    "platform":"debian/linux",
+    "screenshots":[
+        "images/lab/XnOs/XnOs.png",
+        "images/lab/XnOs/XnOs_home.png",
+        "images/lab/XnOs/XnOs_rules.png"
+    ]
+},{
+    "name":"FOSSEE",
+    "img":{
+        "small":"images/lab/fossee.png",
+        "large":""
+    },
+    "description":"FOSSEE (Free & Open Source Software for Education) is an MHRD funded project at IIT Bombay. Its motive is to promote Python for scientific computing through various activities. My work involved digitizing „programming in C‟ into ipynb format and make it available to general public under CC License.",
+    "classes":"professional",
+    "technologies":"python",
+    "platform":"web",
+    "screenshots":[
+        "images/lab/fossee.png"
+    ]
+},{
+    "name":"ACO Simulation",
+    "img":{
+        "small":"images/lab/aco.png",
+        "large":""
+    },
+    "description":"Visual simulation for Ant Colony Optimization to find shortest path between two nodes. It uses an iterative algorithm to construct the solution and made in java swing. Each iteration of the algorithm is used to represent the status of ants (software agents) while collecting food (resource) from an environment set by the user. For an ant k, probability p^k(x,y) of moving from state x to state y would depend on the the attractiveness of the move as computed by the trail level, indicating how proficient it has been in the past to make that particular move.",
+    "classes":"casual design",
+    "technologies":"JAVA, Swing, JApplet",
+    "platform":"cross-platform",
+    "screenshots":[
+        "images/lab/aco.png"
+    ]
+}]

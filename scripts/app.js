@@ -55,100 +55,12 @@ define(['angular-animate','wow'], function()
     app.controller("profileController",function($scope){
         
     });
-    app.controller('labController', function($scope, $rootScope){
+    app.controller('labController', function($scope, $rootScope, $http){
         $scope.modalShown = false;
-        $scope.projects=[{
-                            name:'weather report notifier',
-                            img:{
-                                small:'images/lab/wrn.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'information-retrieval',
-                            technologies:'JAVA, information-retrieval, JavaMail',
-                            platform:'web 2.0'
-                        },{
-                            name:'codeasy',
-                            img:{
-                                small:'images/lab/ce.jpg',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'casual',
-                            technologies:'c++, ncurses',
-                            platform:'debian/linux'
-                        },{
-                            name:'XnOs',
-                            img:{
-                                small:'images/lab/XnOs.png',
-                                large:''
-                            },
-                            description:'XnOs is a 2-player strategy game played on 4 X 4 board in which a player has to get 4 consecutive symbols in a row either horizontally, vertically or diagonally in order to win. It is a varient of m,n,k game in which two players take turns in placing a symbol of their color on an m×n board, the winner being the player who first gets k symbols of their own type in a row. m,n,k-game is also called a k-in-a-row game on m×n board. Thus,tic-tac-toe is the 3,3,3-game and XnOs is a 4-4-4 game.',
-                            classes:'casual',
-                            technologies:'c++, ncurses',
-                            platform:'debian/linux'
-                        },{
-                            name:'chat.js',
-                            img:{
-                                small:'images/lab/chatjs.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'casual design',
-                            technologies:'c++, ncurses',
-                            platform:'debian/linux'
-                        },{
-                            name:'FOSSEE',
-                            img:{
-                                small:'images/lab/fossee.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'professional',
-                            technologies:'c++, ncurses',
-                            platform:'debian/linux'
-                        },{
-                            name:'Multi-Chaotic Cryptosystem',
-                            img:{
-                                small:'images/lab/chaoscrypto.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'professional design',
-                            technologies:'c++, ncurses',
-                            platform:'debian/linux'
-                        },{
-                            name:'Genetic Cryptanalysis',
-                            img:{
-                                small:'images/lab/geneticrypt.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'design',
-                            technologies:'c++, ncurses',
-                            platform:'debian/linux'
-                        },{
-                            name:'CDS Metadata Upgradation',
-                            img:{
-                                small:'images/lab/cds.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'information-retrieval professional',
-                            technologies:'python, ',
-                            platform:'web'
-                        },{
-                            name:'ACO Simulation',
-                            img:{
-                                small:'images/lab/aco.png',
-                                large:''
-                            },
-                            description:'a quick brown fox jumped over the lazy log',
-                            classes:'casual design',
-                            technologies:'JAVA, Swing, JApplet',
-                            platform:'cross-platform'
-                        }];
-        $rootScope.currentProject=$scope.projects[0];
+        $http.get('data/projects.json').then(function(res){
+            $scope.projects = res.data;
+            $rootScope.currentProject=$scope.projects[0];
+        })
         $scope.openModal=function(obj){
             $('.view-animate-container').css({'overflow-y':'hidden'});
             $rootScope.currentProject=obj;
@@ -218,15 +130,24 @@ define(['angular-animate','wow'], function()
         replace: true, // Replace with the template below
         transclude: true, // we want to insert custom content inside the directive
         link: function(scope, element, attrs) {
-          scope.dialogStyle = {};
-          if (attrs.width)
-            scope.dialogStyle.width = attrs.width;
-          if (attrs.height)
-            scope.dialogStyle.height = attrs.height;
-          scope.hideModal = function() {
-            scope.show = false;
-            $('.view-animate-container').css({'overflow-y':'auto'})
-          };
+            scope.dialogStyle = {};
+            if (attrs.width)
+                scope.dialogStyle.width = attrs.width;
+            if (attrs.height)
+                scope.dialogStyle.height = attrs.height;
+            scope.hideModal = function() {
+                scope.show = false;
+                $('.view-animate-container').css({'overflow-y':'auto'})
+            };
+            scope.changeImage = function(img){
+                var property ='linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+img+')';
+                var webkit_property ='-webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+img+')';
+                var moz_property ='-moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('+img+')';                
+                $('.thumb a').css({'background':webkit_property,'-webkit-background-size': '0, cover'});
+                $('.thumb a').css({'background':moz_property,'-moz-background-size': '0, cover'});
+                $('.thumb a').css({'background':property,'background-size': '0, cover'});
+            }            
+
         },
         templateUrl: "views/modal.html"
       };
