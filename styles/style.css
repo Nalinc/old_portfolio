@@ -8,7 +8,7 @@ html, body { height: 100%; padding: 0; margin: 0; }
 
 body {
  	font:16px/24px 'Lato', sans-serif;
-	background:#e0e0e0 !important;
+	background:#fff !important;
 	font-weight: 400;
 	text-align:center;
 	text-rendering: optimizeLegibility;
@@ -387,7 +387,7 @@ input { outline: none; }
 .overlay-content h5 { line-height: 28px; }
 .fa-li { margin-left: -8px; padding-top: 1px; }
 .fa-ul { line-height: 25px!important; }
-.copyright { text-align: center; font-size: 12px; padding: 0;margin:0;	background-color: #e0e0e0 }
+.copyright { text-align: center; font-size: 12px; padding: 0;margin:0;	background-color: #fff }
 .overlay-content .lead { text-align: center; }
 
 /*-----------------------------------------------------------------------------------*/
@@ -890,7 +890,6 @@ ul#filter li.current a { color: #000; font-weight: bold;}
 ul#portfolio {display:block; list-style: none; margin-left: 0; width: 100%; text-align:center;}
 
 ul#portfolio li { 
-  border: 1px solid #dedede; 
   margin: 10px; 
   padding: 5px;
   width:30%;
@@ -900,7 +899,7 @@ ul#portfolio li {
 
 ul#portfolio a { display: block; width: 100%; }
 ul#portfolio a:hover { text-decoration: none; }
-ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5px; width:100%;height:180px;}
+ul#portfolio img { border: 1px solid #dedede; display: block; width:100%;height:180px;}
 
 /*--------------modal--------------*/
 
@@ -1283,7 +1282,7 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
       }
       #navbar-checkbox:checked + .menu ul {
         max-height: 300px;
-        background-color: #e0e0e0;
+        background-color: #fff;
 /*        border-top: 1px solid #101010;*/
       }
       #navbar-checkbox:checked + .menu li {
@@ -1335,7 +1334,6 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
       padding: 5px;
     }
     ul#portfolio li { 
-      border: 1px solid #dedede; 
       margin: 0px; 
       padding: 5px;
       width:100%;
@@ -1353,8 +1351,4 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
     	float: none;
     	margin: 0 auto;  	
   	}	
-}
-
-body{
-  background-color:#e0e0e0
 }
