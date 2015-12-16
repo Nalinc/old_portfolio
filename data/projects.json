@@ -225,7 +225,7 @@
 },{
     "name":"MyELT",
     "img":{
-        "small":"images/lab/MyELT/myelt.jpg",
+        "small":"images/lab/MyELT/myelt.png",
         "large":""
     },
     "description":"A web-based learning management system for English language teaching",
@@ -238,7 +238,7 @@
     "technologies":"JAVA, Struts, AngularJS",
     "platform":"web",
     "screenshots":[
-        "images/lab/MyELT/myelt.jpg"
+        "images/lab/MyELT/myelt.png"
     ]
 },{
     "name":"DLS",
