@@ -67,8 +67,6 @@ a {
 }
 
 .container {
-    min-height: 90%;
-    height: auto !important;
     height: 90%;
     width: 80%;
     margin-top: 120px;
@@ -79,14 +77,13 @@ a {
 /**** CENTER FRONT CONTENT ****/
 .content {
 	position: absolute;
-	margin-top: 80px;
-	margin-left: auto;
-	margin-right: auto;
-	left: 1%;
-	right: 1%;
-	z-index: 1;
-	text-align:center;
-	color: #000;
+	top: 0;
+	bottom: 100px;
+	left:0;
+	right:0;
+	margin: auto;
+	width:80%;
+	height: 30%;
 }
 
 /**** CLOSE BUTTON ****/
@@ -549,8 +546,9 @@ input { outline: none; }
   z-index: 10;
 }
 
-.welcome-text > span{
+.welcome-text > .description{
   font-size:16px;
+  line-height: 30px;
 }
 
 .rw-sentence span{
