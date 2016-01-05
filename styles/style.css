@@ -834,11 +834,6 @@ position: relative;
 -moz-transition-property: width, height,margin-top;
 -moz-transition-duration: 0.5s;
 }
-.dock ul li a:hover {
-width: 70px;
-height: 70px;
-margin:-6px;
-}
 .dock ul li a img {
 width: 100%;
 position: absolute;

@@ -116,6 +116,7 @@ define(['angular-animate','wow'], function()
                 $rootScope.$on('$routeChangeSuccess', function(event, next, current) {
                     $rootScope.showLoader= false;
 //                    $timeout(function(){$rootScope.showLoader= false;}, 1000);
+                    $('.view-animate-container').scrollTop(0);
                 });         
             }
         };
