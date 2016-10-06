@@ -810,8 +810,10 @@ h1.title {
 .profile-header{
     padding-bottom: 20px;	
 }
-.profile-header-details.col-sm-4{
-	text-align: right;
+@media only screen and (max-width: 530px) {
+    .profile-header .pull-right {
+        display: none;
+    }
 }
 .profile-title{
 	font-size: 15px;
