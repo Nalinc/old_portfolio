@@ -102,7 +102,24 @@ define(['angular-animate','wow'], function()
     app.directive("ngFooter",function(){
         return{
             restrict:'E',
-            templateUrl:'views/ng-footer.html'
+            templateUrl:'views/ng-footer.html',
+            controller: function($location, $scope){
+                var footerUpdate = function(){
+                                        if($location.$$path == '/profile')
+                        $scope.hideFooter = true;
+                    else
+                        $scope.hideFooter = false;
+                }
+
+                footerUpdate()
+                $scope.$on('$locationChangeSuccess', function(){
+                    footerUpdate();
+                });
+/*                $scope.$watch($location.$$path,function(oldVal, newVal){
+                    $scope.loc = newVal;
+                })
+                console.log($scope.loc)*/
+            }
         };
     });    
     app.directive("ngHeader",function(){
