@@ -820,8 +820,11 @@ h1.title {
     -webkit-print-color-adjust: exact;	
 }
 a{
-    text-decoration: underline;
+    text-decoration: none;
     color: #2a6496!important;
+}
+a[href]:after {
+    content: "";
 }
 }
 .profile-header{
