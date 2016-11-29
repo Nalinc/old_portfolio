@@ -810,8 +810,19 @@ h1.title {
 }
 @media print{
 .profile.container{
-	border: none;
-}	
+    border: 1px solid #d7d7d7;
+    width: 770px;
+    float: left;
+    margin: 0 20px;
+    height: 2024px!important;
+    max-height: 1110px!important;
+    max-width: 1024px;
+    -webkit-print-color-adjust: exact;	
+}
+a{
+    text-decoration: underline;
+    color: #2a6496!important;
+}
 }
 .profile-header{
     padding-bottom: 20px;	
