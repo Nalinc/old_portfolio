@@ -818,6 +818,7 @@ h1.title {
     max-height: 1110px!important;
     max-width: 1024px;
     -webkit-print-color-adjust: exact;	
+    background-color: #f5f5f5!important;
 }
 a{
     text-decoration: none;
