@@ -1,4 +1,27 @@
 [{
+    "name":"Storykart",
+    "img":{
+        "small":"images/lab/storykart/storykart_A.png",
+        "large":""
+    },
+    "description":"Educational platform to create and share interactive stories. Includes insanely simple drag-drop interface with script-editor to create stories.",
+    "attachments":[{
+            "type":"demo",
+            "link":"http://storykart.herokuapp.com/#/"
+        },{
+            "type":"source",
+            "link":"https://github.com/Nalinc/storykart"
+        }
+    ],
+    "classes":"design",
+    "technologies":"node.js, information-retrieval, twitter-api, data-visualization",
+    "platform":"web",
+    "screenshots":[
+        "images/lab/storykart/storykart_C.png",
+        "images/lab/storykart/storykart_D.png",
+        "images/lab/storykart/story_F.png"
+    ]
+},{
     "name":"tweebbles",
     "img":{
         "small":"images/lab/tweebbles/tweebbles.png",
